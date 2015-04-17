@@ -1,9 +1,9 @@
 %!PS-Adobe-3.0
 %%Creator: gEDA gschem 1.8.1-20121123-13-g875406c
-%%CreationDate: Thu Apr 16 23:16:01 2015
+%%CreationDate: Fri Apr 17 04:13:04 2015
 %%Title: /home/commonadmin/FSGateway/Projects/Current/LaserDriver/LaserDriver.sch
 %%Author: commonadmin
-%%BoundingBox: 0 0 612 792
+%%BoundingBox: 0 0 1190 1684
 %%Orientation: Landscape
 %%Pages: 1
 %%EndComments
@@ -438,9 +438,9 @@
 /gEDAFont ISOLatin1Extended /Helvetica RE
 2 setlinecap
 0.072000 0.072000 scale
-6904 500 translate 90 rotate
-1.010101 1.010101 scale
--50300 -51645 translate
+13698 1063 translate 90 rotate
+2.147842 2.147842 scale
+-50300 -51845 translate
 gsave
 56300 53800 500 0 360 10 darc
 56200 54100 56200 53500 10 line
@@ -732,11 +732,6 @@ newpath
 25
 0 360 arc
 fill
-newpath
-56600 55600
-25
-0 360 arc
-fill
 grestore
 gsave
 false false false false 202.222224 [(R3) ] 90 56600 55800 180.555557 text
@@ -797,7 +792,7 @@ gsave
 false false false false 202.222224 [(R2) ] 90 52000 53100 180.555557 text
 grestore
 gsave
-false false false false 202.222224 [(1k) ] 90 52100 52900 180.555557 text
+false false false false 202.222224 [(1.2k) ] 90 52100 52900 180.555557 text
 grestore
 gsave
 51900 54400 52100 54300 10 line
@@ -824,7 +819,7 @@ gsave
 false false false false 202.222224 [(R1) ] 90 52000 54000 180.555557 text
 grestore
 gsave
-false false false false 202.222224 [(6k) ] 90 52100 53800 180.555557 text
+false false false false 202.222224 [(6.8k) ] 90 52100 53800 180.555557 text
 grestore
 gsave
 52000 52900 52000 52700 10 line
@@ -834,19 +829,12 @@ false true false true 161.777776 [(Vee) ] 0 52125 52650 144.444443 text
 grestore
 grestore
 gsave
-false false false false 202.222224 [(\(24 * \(1k / \(6k + 1k\)\)\) - 1.2 = 2.23V \(~2.9W optical\)) (\(24 * \(1k / \(6k + 1k\)\)\) - 1.6 = 1.83V \(~2.5W optical\)) (\(24 * \(1k / \(6k + 1k\)\)\) - 2 = 1.43V \(~2W optical\)) ] 0 52200 54100 180.555557 text
+false false false false 202.222224 [(\(24 * \(1k / \(6k + 1k\)\)\) - 1.2 = 2.4V \(~3W optical\)) (\(24 * \(1k / \(6k + 1k\)\)\) - 1.6 = 2V \(~2.76W optical\)) (\(24 * \(1k / \(6k + 1k\)\)\) - 2 = 1.6V \(~2.3W optical\)) ] 0 52200 54100 180.555557 text
 grestore
 gsave
 false false false false 202.222224 [(1V = 1A) ] 90 58200 52300 180.555557 text
 grestore
 51000 54700 52000 54700 10 line
-gsave
-53500 52000 53500 51800 10 line
-53650 51800 53350 51800 10 line
-gsave
-false true false true 161.777776 [(Vee) ] 0 53625 51750 144.444443 text
-grestore
-grestore
 gsave
 55500 53000 55500 52800 10 line
 55500 52800 55500 52400 10 line
@@ -857,42 +845,6 @@ gsave
 false false false false 202.222224 [(DIAG) ] 270 55600 53000 180.555557 text
 grestore
 55500 53100 55500 53000 10 line
-gsave
-53700 53500 53300 53500 10 line
-53700 53500 53500 53200 10 line
-53500 53200 53300 53500 10 line
-53700 53200 53300 53200 10 line
-53500 53800 53500 53600 10 line
-53500 52900 53500 53100 10 line
-53500 53100 53500 53200 10 line
-53500 53500 53500 53600 10 line
-newpath
-53500 53800
-25
-0 360 arc
-fill
-newpath
-53500 53800
-25
-0 360 arc
-fill
-grestore
-gsave
-false false false false 202.222224 [(D1) ] 270 53500 53500 180.555557 text
-grestore
-gsave
-53700 52600 53300 52600 10 line
-53700 52600 53500 52300 10 line
-53500 52300 53300 52600 10 line
-53700 52300 53300 52300 10 line
-53500 52900 53500 52700 10 line
-53500 52000 53500 52200 10 line
-53500 52200 53500 52300 10 line
-53500 52600 53500 52700 10 line
-grestore
-gsave
-false false false false 202.222224 [(D2) ] 270 53500 52600 180.555557 text
-grestore
 gsave
 55150 53050 150 0 360 10 darc
 55150 53050 50 0 360 10 darc
@@ -997,9 +949,14 @@ grestore
 gsave
 false false false true 202.222224 [(12V-Pins) ] 0 54800 55600 180.555557 text
 grestore
-56000 55600 59500 55600 10 line
-56000 55600 56000 56100 10 line
-56000 56100 55500 56100 10 line
+56600 55600 59500 55600 10 line
+gsave
+55500 56100 55500 55900 10 line
+55650 55900 55350 55900 10 line
+gsave
+false true false true 161.777776 [(Vee) ] 0 55625 55850 144.444443 text
+grestore
+grestore
 newpath
 56600 53100
 25
@@ -1027,11 +984,6 @@ newpath
 fill
 newpath
 52500 53800
-25
-0 360 arc
-fill
-newpath
-53500 53800
 25
 0 360 arc
 fill
@@ -1111,11 +1063,6 @@ newpath
 0 360 arc
 fill
 newpath
-56600 55600
-25
-0 360 arc
-fill
-newpath
 56600 56500
 25
 0 360 arc
@@ -1176,72 +1123,62 @@ newpath
 0 360 arc
 fill
 newpath
+57000 55600
+25
+0 360 arc
+fill
+newpath
+57000 55600
+25
+0 360 arc
+fill
+newpath
+57000 56500
+25
+0 360 arc
+fill
+newpath
+57000 56500
+25
+0 360 arc
+fill
+newpath
+52000 53800
+25
+0 360 arc
+fill
+newpath
+52000 54700
+25
+0 360 arc
+fill
+newpath
+52000 53800
+25
+0 360 arc
+fill
+newpath
+52000 54700
+25
+0 360 arc
+fill
+newpath
+55500 53100
+25
+0 360 arc
+fill
+newpath
+55500 53100
+25
+0 360 arc
+fill
+newpath
+52000 54700
+25
+0 360 arc
+fill
+newpath
 56600 55600
-25
-0 360 arc
-fill
-newpath
-57000 55600
-25
-0 360 arc
-fill
-newpath
-57000 55600
-25
-0 360 arc
-fill
-newpath
-57000 56500
-25
-0 360 arc
-fill
-newpath
-57000 56500
-25
-0 360 arc
-fill
-newpath
-52000 53800
-25
-0 360 arc
-fill
-newpath
-52000 54700
-25
-0 360 arc
-fill
-newpath
-52000 53800
-25
-0 360 arc
-fill
-newpath
-52000 54700
-25
-0 360 arc
-fill
-newpath
-55500 53100
-25
-0 360 arc
-fill
-newpath
-53500 53800
-25
-0 360 arc
-fill
-newpath
-53500 53800
-25
-0 360 arc
-fill
-newpath
-55500 53100
-25
-0 360 arc
-fill
-newpath
-52000 54700
 25
 0 360 arc
 fill
@@ -1257,16 +1194,6 @@ newpath
 fill
 newpath
 57000 55600
-25
-0 360 arc
-fill
-newpath
-56600 55600
-25
-0 360 arc
-fill
-newpath
-56600 55600
 25
 0 360 arc
 fill
