@@ -24,7 +24,7 @@ refdes=C2
 T 53200 53600 5 10 0 0 270 0 1
 symversion=0.1
 T 52400 53400 5 10 1 1 270 0 1
-value=50n
+value=1u
 }
 N 52000 53800 55500 53800 4
 C 52700 52900 1 180 0 vee-1.sym
@@ -92,7 +92,7 @@ device=RESISTOR
 T 52000 53100 5 10 1 1 90 0 1
 refdes=R2
 T 52100 52900 5 10 1 1 90 0 1
-value=1.2k
+value=390
 }
 C 52100 53800 1 90 0 resistor-1.sym
 {
@@ -101,7 +101,7 @@ device=RESISTOR
 T 52000 54000 5 10 1 1 90 0 1
 refdes=R1
 T 52100 53800 5 10 1 1 90 0 1
-value=6.8k
+value=150
 }
 C 52200 52900 1 180 0 vee-1.sym
 T 52200 54100 9 10 1 0 0 0 3
@@ -140,7 +140,7 @@ N 59900 55600 59900 56100 4
 C 51000 55100 1 180 0 connector2-2.sym
 {
 T 50300 53800 5 10 1 1 180 6 1
-refdes=24VCTRL-Pins
+refdes=5VCTRL-Pins
 T 50700 53850 5 10 0 0 180 0 1
 device=CONNECTOR_2
 T 50700 53650 5 10 0 0 180 0 1
@@ -203,7 +203,7 @@ device=RESISTOR
 T 55900 53100 5 10 1 1 0 0 1
 refdes=R5
 T 55700 53000 5 10 1 1 0 0 1
-value=6.8k
+value=10k
 }
 N 55700 53100 55500 53100 4
 C 55200 51700 1 90 0 resistor-1.sym
@@ -213,7 +213,7 @@ device=RESISTOR
 T 55100 51900 5 10 1 1 90 0 1
 refdes=R6
 T 55200 51700 5 10 1 1 90 0 1
-value=6.8k
+value=10k
 }
 C 56700 52200 1 90 0 resistor-1.sym
 {
@@ -222,7 +222,7 @@ device=RESISTOR
 T 56600 52400 5 10 1 1 90 0 1
 refdes=R7
 T 56700 52200 5 10 1 1 90 0 1
-value=1.2k
+value=1k
 }
 N 56800 53100 56600 53100 4
 L 59400 57000 59400 51500 3 0 0 0 -1 -1
