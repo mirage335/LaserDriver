@@ -2,29 +2,65 @@ Copyright (C) 2015 mirage335
 See the end of the file for license conditions.
 See license.txt for LaserDriver license conditions.
 
-__Usage__
-Variable power laser driver. Specifically designed for NDB7875 diode and LulzBot Taz. Takes 24V ~30kHz PWM control signal, 12V power, and drives laser at 2W-3W maximum optical power.
+#Usage
+Variable power laser driver, usable with diodes like NBD7878 and BDR-209, on machines like the Taz_Mega and LulzBot Taz. Takes <24V ~30kHz PWM control signal, 12V power, and drives laser at 2W-3W maximum optical power.
 
-__Design__
+#Design
 Basic voltage controlled current source. Common collector transistor amplifier attempts to maintain given voltage across emitter resistor. Consequently, the collector load (ie. laser) is allowed to source just enough current to maintain that voltage.
 
 Low-value collector load is placed behind a safety switch. Optical output with this switch open is expected to be <<100mW, likely <2mW.
 
-__Safety__
+#Pinouts
+From PatchRap.
+
+##Laser
+	3 / 1 - 5V
+	3 \ 2 - sGND
+	2 - 3 - Vsys
+	1 / 4 - 12V (Must be powered internally or externally.)
+	1 \ 5 - pGND
+	2 - 6 - pGND
+	4 / 7 - PWM (Control)
+	4 \ 8 - sGND
+
+###Drive
+Laser drive electronic designs may wish to follow similar standards.
+####Tool
+	3 / 1 - 5V
+	3 \ 2 - sGND
+	2 - 3 - Vsys
+	1 / 4 - 12V
+	1 \ 5 - pGND
+	2 - 6 - pGND
+	4 / 7 - PWR (Laser)
+	4 \ 8 - pGND
+
+####Interface
+	3 / 1 - 5V
+	3 \ 2 - sGND
+	2 - 3 - Emitter (Enable, Ammeter)
+	1 / 4 - 10k Emitter (Voltmeter, BNC)
+	1 \ 5 - 10k sGND
+	2 - 6 - pGND
+	4 / 7 - Emitter (Enable, Ammeter)
+	4 \ 8 - pGND
+
+
+#Safety
 Big scary laser. Do not examine with remaining eye. Seriously.
 
-High-power, Class 4 near-UV lasers, such as NDB7875 are extraordinarily hazardous. Backscatter from the projected spot alone is sufficient to slice a retina. Avoid exposure, and wear eye protection.
+High-power, Class 4 near-UV lasers, such as BDR-209 and NDB7875 are extraordinarily hazardous. Backscatter from the projected spot alone is sufficient to slice a retina. Avoid exposure, and wear eye protection.
 
 Beware common grounding and other issues may falsely trigger the control transistor. In general, the laser system should be consiered dangerous whenever powered, particularly when the "SAFETY" switch is closed.
 
 No claim of liability is made by anyone. Your accident is your accident. Use common sense, and follow all regulations. If you don't understand the safety features and limitations, don't use this circuit or anything similar.
 
-_References_
+#References
 https://www.fairchildsemi.com/datasheets/ti/tip120.pdf
 https://sites.google.com/site/dtrlpf/home/diodes/9mm-445nm
 https://www.sparkfun.com/datasheets/Prototyping/General/PRT-09576-6400BG.pdf
 
-__Copyright__
+#Copyright
 This file is part of LaserDriver.
 
 LaserDriver is free software: you can redistribute it and/or modify
