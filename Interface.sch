@@ -59,11 +59,12 @@ T 52800 44400 5 10 1 1 270 0 1
 refdes=R10
 }
 C 53400 43300 1 0 0 gnd-1.sym
-T 55600 43200 9 10 1 0 0 0 4
-~1kHz Response Rate
-(30mm/s) / 1000kHz = 30 microns (<1.5mils)
+T 55700 42900 9 10 1 0 0 0 5
+(30mm/s) / 600Hz = 50 microns (2 mils)
+(10mm/s) / 6000Hz = 2 microns (0.1 mils)
 
-Disable this jumper for switch (pulse) mode operation.
+Leave open for binary/pulse mode
+operation.
 C 55500 44400 1 0 0 output-2.sym
 {
 T 56400 44600 5 10 1 0 0 0 1
@@ -73,42 +74,31 @@ device=none
 T 56400 44500 5 10 1 1 0 1 1
 value=OUTPUT
 }
-C 55600 47000 1 90 0 resistor-1.sym
+C 55800 46100 1 90 0 resistor-1.sym
 {
-T 55200 47300 5 10 0 0 90 0 1
+T 55400 46400 5 10 0 0 90 0 1
 device=RESISTOR
-T 55500 47200 5 10 1 1 90 0 1
+T 55700 46300 5 10 1 1 90 0 1
 refdes=R8
-T 55600 47500 5 10 1 1 90 0 1
+T 55800 46600 5 10 1 1 90 0 1
 value=1
 }
-N 55500 47000 54100 47000 4
-C 54100 47900 1 0 0 switch-spst-1.sym
+N 55700 46100 53700 46100 4
+C 53700 47000 1 0 0 switch-spst-1.sym
 {
-T 54500 48600 5 10 0 0 0 0 1
+T 54100 47700 5 10 0 0 0 0 1
 device=SPST
-T 54100 47700 5 10 1 1 0 0 1
-refdes=SAFETY
-T 54100 47900 5 10 0 0 0 0 1
+T 53700 46800 5 10 1 1 0 0 1
+refdes=SAFETY1
+T 53700 47000 5 10 0 0 0 0 1
 description=$0.80 HobbyKing XT60
-T 54100 47900 5 10 0 0 0 0 1
+T 53700 47000 5 10 0 0 0 0 1
 value=60A
-T 54100 47900 5 10 0 0 0 0 1
+T 53700 47000 5 10 0 0 0 0 1
 footprint=XT60
 }
-N 54900 47900 56500 47900 4
-C 54900 47900 1 270 0 capacitor-2.sym
-{
-T 55600 47700 5 10 0 0 270 0 1
-device=POLARIZED_CAPACITOR
-T 55800 47700 5 10 0 0 270 0 1
-symversion=0.1
-T 55200 47400 5 10 1 1 270 0 1
-refdes=C5
-T 54900 47800 5 10 1 1 270 0 1
-value=1u
-}
-T 55800 47100 9 10 1 0 90 0 1
+N 54500 47000 56100 47000 4
+T 56000 46200 9 10 1 0 90 0 1
 1V ~= 1A
 C 45500 46700 1 0 1 io-1.sym
 {
@@ -119,48 +109,32 @@ device=none
 T 44600 46800 5 10 1 1 0 7 1
 value=IO
 }
-N 45500 46800 48300 46800 4
+N 45500 46800 47800 46800 4
 N 53000 44500 55500 44500 4
-C 54500 43200 1 270 0 capacitor-1.sym
-{
-T 55200 43000 5 10 0 0 270 0 1
-device=CAPACITOR
-T 55400 43000 5 10 0 0 270 0 1
-symversion=0.1
-T 54700 43100 5 10 1 1 270 0 1
-refdes=C2
-T 54600 42800 5 10 1 1 270 0 1
-value=1u
-}
 C 54600 42000 1 0 0 gnd-1.sym
-C 54700 42800 1 0 0 connector2-2.sym
+N 54700 44000 54700 44500 4
+C 53700 46900 1 0 1 io-1.sym
 {
-T 55000 44050 5 10 0 0 0 0 1
-device=CONNECTOR_2
-T 55000 44250 5 10 0 0 0 0 1
-footprint=SIP2N
-T 55400 43800 5 10 1 1 0 6 1
-refdes=J1
-}
-N 54700 43600 54700 44500 4
-C 54100 47800 1 0 1 io-1.sym
-{
-T 53200 48000 5 10 1 0 0 6 1
+T 52800 47100 5 10 1 0 0 6 1
 net=emitter:1
-T 53900 48400 5 10 0 0 0 6 1
+T 53500 47500 5 10 0 0 0 6 1
 device=none
-T 53200 47900 5 10 1 1 0 7 1
+T 52800 47000 5 10 1 1 0 7 1
 value=IO
 }
-C 54100 46800 1 90 0 vee-1.sym
-C 49200 46400 1 0 0 connector3-2.sym
+C 53700 45900 1 90 0 vee-1.sym
+C 48700 46400 1 0 0 connector3-2.sym
 {
-T 49900 48100 5 10 1 1 0 6 1
+T 49400 48100 5 10 1 1 0 6 1
 refdes=M1
-T 49500 48050 5 10 0 0 0 0 1
+T 49000 48050 5 10 0 0 0 0 1
 device=CONNECTOR_3
-T 49500 48250 5 10 0 0 0 0 1
+T 49000 48250 5 10 0 0 0 0 1
 footprint=JUMPER3
+T 48700 46400 5 10 0 0 0 0 1
+description=-
+T 48700 46400 5 10 0 0 0 0 1
+value=-
 }
 C 46800 45100 1 0 1 output-2.sym
 {
@@ -193,29 +167,33 @@ description=$0.55 MOUSER 512-ES3J
 T 53300 44500 5 10 0 0 270 0 1
 value=-
 }
-C 50800 46400 1 0 0 connector3-2.sym
+C 49500 46400 1 0 0 connector3-2.sym
 {
-T 51500 48100 5 10 1 1 0 6 1
+T 50200 48100 5 10 1 1 0 6 1
 refdes=M2
-T 51100 48050 5 10 0 0 0 0 1
+T 49800 48050 5 10 0 0 0 0 1
 device=CONNECTOR_3
-T 51100 48250 5 10 0 0 0 0 1
+T 49800 48250 5 10 0 0 0 0 1
 footprint=JUMPER3
+T 49500 46400 5 10 0 0 0 0 1
+description=-
+T 49500 46400 5 10 0 0 0 0 1
+value=-
 }
-N 49200 47600 50800 47600 4
-N 49200 47200 50800 47200 4
-N 49200 46800 50800 46800 4
-C 48300 46700 1 0 0 resistor-1.sym
+N 48700 47600 50300 47600 4
+N 48700 47200 50300 47200 4
+N 48700 46800 50300 46800 4
+C 47800 46700 1 0 0 resistor-1.sym
 {
-T 48600 47100 5 10 0 0 0 0 1
+T 48100 47100 5 10 0 0 0 0 1
 device=RESISTOR
-T 48500 46800 5 10 1 1 0 0 1
+T 48000 46800 5 10 1 1 0 0 1
 refdes=R3
-T 48300 46700 5 10 1 1 0 0 1
+T 47800 46700 5 10 1 1 0 0 1
 value=1k
-T 48300 46700 5 10 0 0 270 0 1
+T 47800 46700 5 10 0 0 270 0 1
 description=$0.10 MOUSER 71-CRCW1206-1.0K-E3
-T 48300 46700 5 10 0 0 270 0 1
+T 47800 46700 5 10 0 0 270 0 1
 footprint=1206
 }
 C 50700 45000 1 270 0 pot-1.sym
@@ -233,71 +211,56 @@ refdes=R10
 }
 N 52500 45000 50800 45000 4
 C 50700 43800 1 0 0 gnd-1.sym
-C 52700 41800 1 0 0 connector2-2.sym
-{
-T 53000 43050 5 10 0 0 0 0 1
-device=CONNECTOR_2
-T 53000 43250 5 10 0 0 0 0 1
-footprint=SIP2N
-T 53400 42800 5 10 1 1 0 6 1
-refdes=J1
-}
-N 53000 44500 53000 43200 4
-N 53000 43200 52700 43200 4
-N 52700 43200 52700 42600 4
+N 53000 42900 53000 44500 4
 N 51300 44500 52000 44500 4
-N 52000 44500 52000 42200 4
-N 52000 42200 52700 42200 4
-T 50900 40300 9 10 1 0 0 0 7
+N 52000 44500 52000 42000 4
+N 52000 42000 53500 42000 4
+T 52000 39100 9 10 1 0 0 0 12
 Two potentiometers provided to "store"
 two maximum power settings.
 
 Set the second, always-connected
-potentiometer for the lower-power laser,
+potentiometer for lower-power,
 and the first, jumpered, potentiometer
 as a bypass for higher-power.
-C 49200 47000 1 90 0 vee-1.sym
+
+Besides supporting two lasers, TYPE switch
+can be used incombination with the "SAFETY"
+and "BINARY" switch to fine tune photoexposure
+settings (often a fraction of a milliwatt).
+C 48700 47000 1 90 0 vee-1.sym
 C 46600 46400 1 0 0 12V-plus-1.sym
-C 57600 47000 1 90 0 resistor-1.sym
+C 57200 46100 1 90 0 resistor-1.sym
 {
-T 57200 47300 5 10 0 0 90 0 1
+T 56800 46400 5 10 0 0 90 0 1
 device=RESISTOR
-T 57500 47200 5 10 1 1 90 0 1
+T 57100 46300 5 10 1 1 90 0 1
 refdes=R8
-T 57600 47500 5 10 1 1 90 0 1
+T 57200 46600 5 10 1 1 90 0 1
 value=0.1
 }
-N 57500 47000 57000 47000 4
-C 56500 47900 1 0 0 switch-spst-1.sym
+N 57100 46100 56600 46100 4
+C 56100 47000 1 0 0 switch-spst-1.sym
 {
-T 56900 48600 5 10 0 0 0 0 1
+T 56500 47700 5 10 0 0 0 0 1
 device=SPST
-T 56500 47900 5 10 0 0 0 0 1
+T 56100 47000 5 10 0 0 0 0 1
 description=$0.80 HobbyKing XT60
-T 56500 47900 5 10 0 0 0 0 1
+T 56100 47000 5 10 0 0 0 0 1
 value=60A
-T 56500 47900 5 10 0 0 0 0 1
+T 56100 47000 5 10 0 0 0 0 1
 footprint=XT60
-T 56500 47700 5 10 1 1 0 0 1
-refdes=PULSE
+T 56100 46800 5 10 1 1 0 0 1
+refdes=PULSE1
 }
-N 57300 47900 57500 47900 4
-C 57000 46800 1 90 0 vee-1.sym
-T 57800 47100 9 10 1 0 90 0 1
+N 56900 47000 57100 47000 4
+C 56600 45900 1 90 0 vee-1.sym
+T 57400 46200 9 10 1 0 90 0 1
 1V ~= 10A
 T 48000 49600 9 10 1 0 0 0 3
 WARNING
 High-current cable and connector (XT60) strongly recommended for pulse mode.
 Do not operate laser in pulse mode under linear control signal.
-C 46800 42300 1 0 0 connector2-2.sym
-{
-T 47500 43600 5 10 1 1 0 6 1
-refdes=IF2
-T 47100 43550 5 10 0 0 0 0 1
-device=CONNECTOR_2
-T 47100 43750 5 10 0 0 0 0 1
-footprint=SIP2N
-}
 C 46800 43000 1 0 1 io-1.sym
 {
 T 45900 43200 5 10 1 0 0 6 1
@@ -308,4 +271,125 @@ T 45900 43100 5 10 1 1 0 7 1
 value=IO
 }
 C 46800 42500 1 90 0 vee-1.sym
-C 49000 47600 1 0 0 12V-plus-1.sym
+C 48500 47600 1 0 0 12V-plus-1.sym
+C 46800 42300 1 0 0 connector2-2.sym
+{
+T 47100 43550 5 10 0 0 0 0 1
+device=CONNECTOR_2
+T 47100 43750 5 10 0 0 0 0 1
+footprint=XT60
+T 47500 43300 5 10 1 1 0 6 1
+refdes=IF2
+T 46800 42300 5 10 0 0 0 0 1
+description=$0.80 HobbyKing XT60
+T 46800 42300 5 10 0 0 0 0 1
+value=60A
+}
+C 50300 46400 1 0 0 connector3-2.sym
+{
+T 51000 48100 5 10 1 1 0 6 1
+refdes=M3
+T 50600 48050 5 10 0 0 0 0 1
+device=CONNECTOR_3
+T 50600 48250 5 10 0 0 0 0 1
+footprint=JUMPER3
+T 50300 46400 5 10 0 0 0 0 1
+description=-
+T 50300 46400 5 10 0 0 0 0 1
+value=-
+}
+T 53100 45000 9 10 1 0 0 0 4
+A 1uF capacitor may permit uncontrolled 5W/1us pulse
+emission. Though even 0.5W/10us may be unlikely, the
+1uF capacitor should be left disconnected in favor of
+0.1uF if possible.
+C 55100 47000 1 270 0 capacitor-1.sym
+{
+T 55800 46800 5 10 0 0 270 0 1
+device=CAPACITOR
+T 56000 46800 5 10 0 0 270 0 1
+symversion=0.1
+T 55300 46900 5 10 1 1 270 0 1
+refdes=C2
+T 55200 46600 5 10 1 1 270 0 1
+value=0.1u
+T 55100 47000 5 10 0 0 0 0 1
+description=$0.10 MOUSER 80-C0603C104K3R
+T 55100 47000 5 10 0 0 0 0 1
+footprint=0603
+}
+C 54500 43200 1 270 0 capacitor-1.sym
+{
+T 55200 43000 5 10 0 0 270 0 1
+device=CAPACITOR
+T 55400 43000 5 10 0 0 270 0 1
+symversion=0.1
+T 54700 43100 5 10 1 1 270 0 1
+refdes=C2
+T 54600 42800 5 10 1 1 270 0 1
+value=1u
+T 54500 43200 5 10 0 0 0 0 1
+description=$0.15 MOUSER 80-C0603C105K3P
+T 54500 43200 5 10 0 0 0 0 1
+footprint=0603
+}
+C 54600 47000 1 270 0 capacitor-1.sym
+{
+T 55300 46800 5 10 0 0 270 0 1
+device=CAPACITOR
+T 55500 46800 5 10 0 0 270 0 1
+symversion=0.1
+T 54800 46900 5 10 1 1 270 0 1
+refdes=C2
+T 54700 46600 5 10 1 1 270 0 1
+value=1u
+T 54600 47000 5 10 0 0 0 0 1
+description=$0.15 MOUSER 80-C0603C105K3P
+T 54600 47000 5 10 0 0 0 0 1
+footprint=0603
+}
+C 54000 43200 1 270 0 capacitor-1.sym
+{
+T 54700 43000 5 10 0 0 270 0 1
+device=CAPACITOR
+T 54900 43000 5 10 0 0 270 0 1
+symversion=0.1
+T 54200 43100 5 10 1 1 270 0 1
+refdes=C2
+T 54100 42800 5 10 1 1 270 0 1
+value=0.1u
+T 54000 43200 5 10 0 0 0 0 1
+description=$0.10 MOUSER 80-C0603C104K3R
+T 54000 43200 5 10 0 0 0 0 1
+footprint=0603
+}
+C 54100 42000 1 0 0 gnd-1.sym
+N 54700 43200 54200 43200 4
+C 54700 44000 1 270 0 switch-spst-1.sym
+{
+T 55400 43600 5 10 0 0 270 0 1
+device=SPST
+T 54700 44000 5 10 0 0 270 0 1
+description=-
+T 54700 44000 5 10 0 0 270 0 1
+value=-
+T 54700 44000 5 10 0 0 270 0 1
+footprint=JUMPER2
+T 54500 44000 5 10 1 1 270 0 1
+refdes=BIN1
+}
+C 53500 42800 1 270 0 switch-spst-1.sym
+{
+T 54200 42400 5 10 0 0 270 0 1
+device=SPST
+T 53500 42800 5 10 0 0 270 0 1
+description=-
+T 53500 42800 5 10 0 0 270 0 1
+value=-
+T 53500 42800 5 10 0 0 270 0 1
+footprint=JUMPER2
+T 53300 42800 5 10 1 1 270 0 1
+refdes=TYPE1
+}
+N 53500 42800 53500 42900 4
+N 53500 42900 53000 42900 4

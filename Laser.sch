@@ -120,15 +120,6 @@ description=$0.55 MOUSER 512-ES3J
 T 56300 54500 5 10 0 0 270 0 1
 value=-
 }
-C 49000 51400 1 0 1 connector2-2.sym
-{
-T 48700 52650 5 10 0 0 0 6 1
-device=CONNECTOR_2
-T 48700 52850 5 10 0 0 0 6 1
-footprint=SIP2N
-T 48300 52700 5 10 1 1 0 0 1
-refdes=LASER2
-}
 C 49000 51700 1 0 0 io-1.sym
 {
 T 49200 52300 5 10 0 0 0 0 1
@@ -146,4 +137,17 @@ T 49900 52300 5 10 1 0 0 0 1
 net=laserPWRplus:1
 T 49900 52200 5 10 1 1 0 1 1
 value=IO
+}
+C 49000 51400 1 0 1 connector2-2.sym
+{
+T 48700 52650 5 10 0 0 0 6 1
+device=CONNECTOR_2
+T 48700 52850 5 10 0 0 0 6 1
+footprint=XT60
+T 48300 52700 5 10 1 1 0 0 1
+refdes=LASER2
+T 49000 51400 5 10 0 0 0 6 1
+description=$0.80 HobbyKing XT60
+T 49000 51400 5 10 0 0 0 6 1
+value=60A
 }
