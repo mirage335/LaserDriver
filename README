@@ -20,7 +20,7 @@ From PatchRap.
 	1 / 4 - 12V (Must be powered internally or externally.)
 	1 \ 5 - pGND
 	2 - 6 - pGND
-	4 / 7 - PWM (Control)
+	4 / 7 - PWM (Digital Control)
 	4 \ 8 - sGND
 
 ###Drive
@@ -28,22 +28,22 @@ Laser drive electronic designs may wish to follow similar standards.
 ####Tool
 	3 / 1 - 5V
 	3 \ 2 - sGND
-	2 - 3 - Vsys
+	2 - 3 - PWR+ (Laser)
 	1 / 4 - 12V
 	1 \ 5 - pGND
-	2 - 6 - pGND
-	4 / 7 - PWR (Laser)
-	4 \ 8 - pGND
+	2 - 6 - PWR- (Laser)
+	4 / 7 - PWR+ (Laser)
+	4 \ 8 - PWR- (Laser)
 
 ####Interface
 	3 / 1 - 5V
 	3 \ 2 - sGND
 	2 - 3 - Emitter (Enable, Ammeter)
-	1 / 4 - 10k Emitter (Voltmeter, BNC)
-	1 \ 5 - 10k sGND
+	1 / 4 - Emitter (Enable, Ammeter)
+	1 \ 5 - pGND
 	2 - 6 - pGND
-	4 / 7 - Emitter (Enable, Ammeter)
-	4 \ 8 - pGND
+	4 / 7 - PWM (Digital Control)
+	4 \ 8 - Sig (Analog Control)
 
 
 #Safety
