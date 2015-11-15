@@ -104,6 +104,10 @@ T 56600 56250 5 10 0 0 0 0 1
 device=CONNECTOR_2
 T 56600 56450 5 10 0 0 0 0 1
 footprint=JUMPER2
+T 56300 55000 5 10 0 0 0 0 1
+value=-
+T 56300 55000 5 10 0 0 0 0 1
+description=-
 }
 C 56500 55800 1 0 1 12V-plus-1.sym
 C 56300 55600 1 90 1 vee-1.sym

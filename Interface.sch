@@ -27,7 +27,7 @@ C 49900 44900 1 0 0 resistor-1.sym
 T 50200 45300 5 10 0 0 0 0 1
 device=RESISTOR
 T 50100 45000 5 10 1 1 0 0 1
-refdes=R3
+refdes=R4
 T 49900 44900 5 10 1 1 0 0 1
 value=100
 T 49900 44900 5 10 0 0 0 0 1
@@ -56,7 +56,7 @@ footprint=VISHAY_T18
 T 52400 45000 5 10 0 0 270 0 1
 description=$1.84 MOUSER 72-T18-1K
 T 52800 44400 5 10 1 1 270 0 1
-refdes=R10
+refdes=R6
 }
 C 53400 43300 1 0 0 gnd-1.sym
 T 55700 42900 9 10 1 0 0 0 5
@@ -79,9 +79,13 @@ C 55800 46100 1 90 0 resistor-1.sym
 T 55400 46400 5 10 0 0 90 0 1
 device=RESISTOR
 T 55700 46300 5 10 1 1 90 0 1
-refdes=R8
+refdes=R2
 T 55800 46600 5 10 1 1 90 0 1
 value=1
+T 55800 46100 5 10 0 0 0 0 1
+footprint=JUMPER2
+T 55800 46100 5 10 0 0 0 0 1
+description=$1.15 MOUSER 71-RS0051R000FE12 
 }
 N 55700 46100 53700 46100 4
 C 53700 47000 1 0 0 switch-spst-1.sym
@@ -188,7 +192,7 @@ C 47800 46700 1 0 0 resistor-1.sym
 T 48100 47100 5 10 0 0 0 0 1
 device=RESISTOR
 T 48000 46800 5 10 1 1 0 0 1
-refdes=R3
+refdes=R1
 T 47800 46700 5 10 1 1 0 0 1
 value=1k
 T 47800 46700 5 10 0 0 270 0 1
@@ -207,7 +211,7 @@ footprint=VISHAY_T18
 T 50700 45000 5 10 0 0 270 0 1
 description=$1.84 MOUSER 72-T18-1K
 T 51100 44400 5 10 1 1 270 0 1
-refdes=R10
+refdes=R5
 }
 N 52500 45000 50800 45000 4
 C 50700 43800 1 0 0 gnd-1.sym
@@ -230,15 +234,6 @@ and "BINARY" switch to fine tune photoexposure
 settings (often a fraction of a milliwatt).
 C 48700 47000 1 90 0 vee-1.sym
 C 46600 46400 1 0 0 12V-plus-1.sym
-C 57200 46100 1 90 0 resistor-1.sym
-{
-T 56800 46400 5 10 0 0 90 0 1
-device=RESISTOR
-T 57100 46300 5 10 1 1 90 0 1
-refdes=R8
-T 57200 46600 5 10 1 1 90 0 1
-value=0.1
-}
 N 57100 46100 56600 46100 4
 C 56100 47000 1 0 0 switch-spst-1.sym
 {
@@ -325,7 +320,7 @@ device=CAPACITOR
 T 55400 43000 5 10 0 0 270 0 1
 symversion=0.1
 T 54700 43100 5 10 1 1 270 0 1
-refdes=C2
+refdes=C4
 T 54600 42800 5 10 1 1 270 0 1
 value=1u
 T 54500 43200 5 10 0 0 0 0 1
@@ -340,7 +335,7 @@ device=CAPACITOR
 T 55500 46800 5 10 0 0 270 0 1
 symversion=0.1
 T 54800 46900 5 10 1 1 270 0 1
-refdes=C2
+refdes=C1
 T 54700 46600 5 10 1 1 270 0 1
 value=1u
 T 54600 47000 5 10 0 0 0 0 1
@@ -355,7 +350,7 @@ device=CAPACITOR
 T 54900 43000 5 10 0 0 270 0 1
 symversion=0.1
 T 54200 43100 5 10 1 1 270 0 1
-refdes=C2
+refdes=C3
 T 54100 42800 5 10 1 1 270 0 1
 value=0.1u
 T 54000 43200 5 10 0 0 0 0 1
@@ -393,3 +388,16 @@ refdes=TYPE1
 }
 N 53500 42800 53500 42900 4
 N 53500 42900 53000 42900 4
+C 57200 46100 1 90 0 resistor-1.sym
+{
+T 56800 46400 5 10 0 0 90 0 1
+device=RESISTOR
+T 57100 46300 5 10 1 1 90 0 1
+refdes=R3
+T 57200 46600 5 10 1 1 90 0 1
+value=0.1
+T 57200 46100 5 10 0 0 0 0 1
+footprint=JUMPER2
+T 57200 46100 5 10 0 0 0 0 1
+description=$0.84 MOUSER 71-LVR05R1000FE12
+}
