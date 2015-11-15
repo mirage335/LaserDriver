@@ -39,12 +39,18 @@ Laser drive electronic designs may wish to follow similar standards.
 	3 / 1 - 5V
 	3 \ 2 - sGND
 	2 - 3 - Emitter (Enable, Ammeter)
-	1 / 4 - Emitter (Enable, Ammeter)
+	1 / 4 - 12V
 	1 \ 5 - pGND
 	2 - 6 - pGND
 	4 / 7 - PWM (Digital Control)
 	4 \ 8 - Sig (Analog Control)
 
+#Pulse Mode
+Bypasses are provided to disable the low-pass filter and enable 30A current. Intended for experimental use with PWM signals to produce crude 10us laser pulses.
+
+#Future Work
+*) Programmable pulse-mode laser driver using similar pinout.
+*) Beam stearing optoelectronics, for VLSI photolithographic exposure.
 
 #Safety
 Big scary laser. Do not examine with remaining eye. Seriously.

@@ -1,4 +1,6 @@
 1 * Digital Panel Voltmeter - http://www.adafruit.com/products/705 
 1 * Analog Panel Voltmeter - http://www.amazon.com/dp/B00PFBFLB2/?tag=hacdc-20 OR http://www.amazon.com/dp/B00PFBFLB2/?tag=hacdc-20 OR http://www.amazon.com/dp/B009PKEJ44/?tag=hacdc-20NB
 
+2 * XT60 Connectors - http://www.hobbyking.com/hobbyking/store/__9572__Nylon_XT60_Connectors_Male_Female_5_pairs_GENUINE.html
+
 https://www.sparkfun.com/products/9576
