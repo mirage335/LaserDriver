@@ -149,7 +149,7 @@ device=CONNECTOR_2
 T 48700 52850 5 10 0 0 0 6 1
 footprint=XT60
 T 48300 52700 5 10 1 1 0 0 1
-refdes=LASER2
+refdes=L2
 T 49000 51400 5 10 0 0 0 6 1
 description=$0.80 HobbyKing XT60
 T 49000 51400 5 10 0 0 0 6 1

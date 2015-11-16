@@ -1,5 +1,18 @@
 # Pin name action command file
 
+# Start of element R3
+ChangePinName(R3, 1, ccw)
+ChangePinName(R3, 3, cw)
+ChangePinName(R3, 2, wiper)
+
+# Start of element LASER2
+ChangePinName(LASER2, 2, 2)
+ChangePinName(LASER2, 1, 1)
+
+# Start of element IF2
+ChangePinName(IF2, 2, 2)
+ChangePinName(IF2, 1, 1)
+
 # Start of element D1
 ChangePinName(D1, 1, 1)
 ChangePinName(D1, 2, 2)
@@ -11,6 +24,10 @@ ChangePinName(D3, 2, 2)
 # Start of element D2
 ChangePinName(D2, 1, 1)
 ChangePinName(D2, 2, 2)
+
+# Start of element R1
+ChangePinName(R1, 1, 1)
+ChangePinName(R1, 2, 2)
 
 # Start of element F1
 ChangePinName(F1, 2, 2)
@@ -68,14 +85,6 @@ ChangePinName(CTRL1, 4, 4)
 ChangePinName(CTRL1, 3, 3)
 ChangePinName(CTRL1, 2, 2)
 ChangePinName(CTRL1, 1, 1)
-
-# Start of element R1
-ChangePinName(R1, 1, 1)
-ChangePinName(R1, 2, 2)
-
-# Start of element R3
-ChangePinName(R3, 1, 1)
-ChangePinName(R3, 2, 2)
 
 # Start of element R2
 ChangePinName(R2, 1, 1)

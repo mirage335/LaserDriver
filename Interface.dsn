@@ -1,0 +1,308 @@
+(pcb notnamed
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "gEDA PCB")
+    (host_version "1.99z")
+  )
+  (resolution mm 1000000)
+  (structure
+    (layer "top"
+      (type signal)
+    )
+    (layer "ground"
+      (type signal)
+    )
+    (layer "signal2"
+      (type signal)
+    )
+    (layer "signal3"
+      (type signal)
+    )
+    (layer "power"
+      (type signal)
+    )
+    (layer "outline"
+      (type signal)
+    )
+    (layer "spare"
+      (type signal)
+    )
+    (layer "bottom"
+      (type signal)
+    )
+    (boundary
+      (rect pcb 0.0 0.0 152.400000 127.000000)
+    )
+    (via via_762000_406400)
+    (rule
+      (width 0.3048)
+      (clear 0.3048)
+      (clear 0.3048 (type wire_area))
+      (clear 0.3048 (type via_smd via_pin))
+      (clear 0.3048 (type smd_smd))
+      (clear 0.3048 (type default_smd))
+    )
+  )
+  (placement
+    (component 18
+      (place "TYPE1" 44.450000 88.519000 front 0 (PN 0))
+    )
+    (component 30
+      (place "BIN1" 44.450000 82.804000 front 0 (PN 0))
+    )
+    (component 79
+      (place "IF2" 20.237000 74.930000 front 0 (PN 0))
+    )
+    (component 94
+      (place "PULSE1" 39.033000 105.918000 front 0 (PN 0))
+    )
+    (component 123
+      (place "R1" 15.977870 99.060000 front 0 (PN 0))
+    )
+    (component 144
+      (place "D1" 25.552400 100.584000 front 0 (PN 0))
+    )
+    (component 169
+      (place "SAFETY1" 39.033000 97.409000 front 0 (PN 0))
+    )
+    (component 218
+      (place "IF1" 24.891666 88.266666 front 0 (PN 0))
+    )
+    (component 328
+      (place "R4" 29.591000 76.732130 front 0 (PN 0))
+    )
+    (component 364
+      (place "R5" 34.586333 81.110666 front 0 (PN 0))
+    )
+    (component 378
+      (place "R6" 40.555333 81.110666 front 0 (PN 0))
+    )
+    (component 1079
+      (place "M3" 19.431000 107.315000 front 0 (PN 0))
+    )
+    (component 1092
+      (place "M2" 16.510000 107.315000 front 0 (PN 0))
+    )
+    (component 1105
+      (place "M1" 13.589000 107.315000 front 0 (PN 0))
+    )
+    (component 2843
+      (place "R3" 26.543000 108.585000 front 0 (PN 0))
+    )
+    (component 2855
+      (place "R2" 29.464000 108.585000 front 0 (PN 0))
+    )
+    (component 3017
+      (place "C2" 23.114000 105.268014 front 0 (PN 0))
+    )
+    (component 3407
+      (place "C1" 21.590000 105.268014 front 0 (PN 0))
+    )
+    (component 6743
+      (place "C3" 44.069000 78.598014 front 0 (PN 0))
+    )
+    (component 6755
+      (place "C4" 45.466000 78.598014 front 0 (PN 0))
+    )
+  )
+  (library
+    (image 18
+      (pin Th_square_1524000 "1" 0.000000 1.270000)
+      (pin Th_round_1524000 "2" 0.000000 -1.270000)
+    )
+    (image 30
+      (pin Th_square_1524000 "1" 0.000000 1.270000)
+      (pin Th_round_1524000 "2" 0.000000 -1.270000)
+    )
+    (image 79
+      (pin Th_round_6000000 "1" -3.600000 0.000000)
+      (pin Th_round_6000000 "2" 3.600000 0.000000)
+    )
+    (image 94
+      (pin Th_round_6000000 "1" -3.600000 0.000000)
+      (pin Th_round_6000000 "2" 3.600000 0.000000)
+    )
+    (image 123
+      (pin Smd_rect_1299972x1899920 "1" 1.499870 0.000000)
+      (pin Smd_rect_1299972x1899920 "2" -1.499870 0.000000)
+    )
+    (image 144
+      (pin Smd_rect_3683000x4699000 "1" -2.768600 0.000000)
+      (pin Smd_rect_3683000x4699000 "2" 2.768600 0.000000)
+    )
+    (image 169
+      (pin Th_round_6000000 "1" -3.600000 0.000000)
+      (pin Th_round_6000000 "2" 3.600000 0.000000)
+    )
+    (image 218
+      (pin Th_round_1400000 "2" 4.318334 3.173334)
+      (pin Th_round_1400000 "4" 4.318334 0.633334)
+      (pin Th_round_1400000 "6" 4.318334 -1.906666)
+      (pin Th_round_1400000 "8" 4.318334 -4.446666)
+      (pin Th_round_1400000 "1" 1.778334 4.443334)
+      (pin Th_round_1400000 "3" 1.778334 1.903334)
+      (pin Th_round_1400000 "5" 1.778334 -0.636666)
+      (pin Th_round_1400000 "7" 1.778334 -3.176666)
+      (pin Th_round_3750000 "9" -4.571666 5.713334)
+      (pin Th_round_3750000 "9" -4.571666 -5.716666)
+      (pin Th_round_2100000 "9" -7.621666 7.883334)
+      (pin Th_round_2100000 "9" -7.621666 -7.866666)
+    )
+    (image 328
+      (pin Smd_rect_1899920x1299972 "1" 0.000000 1.499870)
+      (pin Smd_rect_1899920x1299972 "2" 0.000000 -1.499870)
+    )
+    (image 364
+      (pin Th_square_1828800 "1" 0.846667 6.773334)
+      (pin Th_round_1828800 "3" 0.846667 -5.926666)
+      (pin Th_round_1828800 "2" -1.693333 -0.846666)
+    )
+    (image 378
+      (pin Th_square_1828800 "1" 0.846667 6.773334)
+      (pin Th_round_1828800 "3" 0.846667 -5.926666)
+      (pin Th_round_1828800 "2" -1.693333 -0.846666)
+    )
+    (image 1079
+      (pin Th_square_1524000 "1" 0.000000 -2.540000)
+      (pin Th_round_1524000 "2" 0.000000 0.000000)
+      (pin Th_round_1524000 "3" 0.000000 2.540000)
+    )
+    (image 1092
+      (pin Th_square_1524000 "1" 0.000000 -2.540000)
+      (pin Th_round_1524000 "2" 0.000000 0.000000)
+      (pin Th_round_1524000 "3" 0.000000 2.540000)
+    )
+    (image 1105
+      (pin Th_square_1524000 "1" 0.000000 -2.540000)
+      (pin Th_round_1524000 "2" 0.000000 0.000000)
+      (pin Th_round_1524000 "3" 0.000000 2.540000)
+    )
+    (image 2843
+      (pin Th_square_1524000 "1" 0.000000 1.270000)
+      (pin Th_round_1524000 "2" 0.000000 -1.270000)
+    )
+    (image 2855
+      (pin Th_square_1524000 "1" 0.000000 1.270000)
+      (pin Th_round_1524000 "2" 0.000000 -1.270000)
+    )
+    (image 3017
+      (pin Smd_rect_999744x749808 "1" 0.000000 -0.649986)
+      (pin Smd_rect_999744x749808 "2" 0.000000 0.649986)
+    )
+    (image 3407
+      (pin Smd_rect_999744x749808 "1" 0.000000 -0.649986)
+      (pin Smd_rect_999744x749808 "2" 0.000000 0.649986)
+    )
+    (image 6743
+      (pin Smd_rect_999744x749808 "1" 0.000000 0.649986)
+      (pin Smd_rect_999744x749808 "2" 0.000000 -0.649986)
+    )
+    (image 6755
+      (pin Smd_rect_999744x749808 "1" 0.000000 0.649986)
+      (pin Smd_rect_999744x749808 "2" 0.000000 -0.649986)
+    )
+    (padstack Th_square_1524000
+      (shape (rect signal -0.762000 -0.762000 0.762000 0.762000))
+      (attach off)
+    )
+    (padstack Th_round_1524000
+      (shape (circle signal 1.524000))
+      (attach off)
+    )
+    (padstack Th_round_6000000
+      (shape (circle signal 6.000000))
+      (attach off)
+    )
+    (padstack Smd_rect_1299972x1899920
+      (shape (rect "top" -0.649986 -0.949960 0.649986 0.949960))
+      (attach off)
+    )
+    (padstack Smd_rect_3683000x4699000
+      (shape (rect "top" -1.841500 -2.349500 1.841500 2.349500))
+      (attach off)
+    )
+    (padstack Th_round_1400000
+      (shape (circle signal 1.400000))
+      (attach off)
+    )
+    (padstack Th_round_3750000
+      (shape (circle signal 3.750000))
+      (attach off)
+    )
+    (padstack Th_round_2100000
+      (shape (circle signal 2.100000))
+      (attach off)
+    )
+    (padstack Smd_rect_1899920x1299972
+      (shape (rect "top" -0.949960 -0.649986 0.949960 0.649986))
+      (attach off)
+    )
+    (padstack Th_square_1828800
+      (shape (rect signal -0.914400 -0.914400 0.914400 0.914400))
+      (attach off)
+    )
+    (padstack Th_round_1828800
+      (shape (circle signal 1.828800))
+      (attach off)
+    )
+    (padstack Smd_rect_999744x749808
+      (shape (rect "top" -0.499872 -0.374904 0.499872 0.374904))
+      (attach off)
+    )
+    (padstack via_762000_406400
+      (shape (circle signal 0.762000))
+      (attach off)
+    )
+  )
+  (network
+    (net "+5V"
+      (pins "IF1"-"1")
+    )
+    (net "+12V"
+      (pins "IF1"-"4" "M1"-"1" "M2"-"1" "M3"-"1")
+    )
+    (net "aLaser"
+      (pins "BIN1"-"1" "D1"-"1" "IF1"-"8" "R6"-"2" "TYPE1"-"1")
+    )
+    (net "dLaser"
+      (pins "IF1"-"7" "R4"-"1")
+    )
+    (net "emitter"
+      (pins "IF1"-"3" "IF2"-"1" "R1"-"1" "SAFETY1"-"1")
+    )
+    (net "GND"
+      (pins "C3"-"2" "C4"-"2" "D1"-"2" "IF1"-"2" "IF1"-"9" "R5"-"3" "R6"-"3")
+    )
+    (net "unnamed_net1"
+      (pins "R4"-"2" "R5"-"1" "R6"-"1")
+    )
+    (net "unnamed_net2"
+      (pins "C1"-"1" "C2"-"1" "PULSE1"-"1" "R2"-"2" "SAFETY1"-"2")
+    )
+    (net "unnamed_net3"
+      (pins "M1"-"3" "M2"-"3" "M3"-"3" "R1"-"2")
+    )
+    (net "unnamed_net4"
+      (pins "R5"-"2" "TYPE1"-"2")
+    )
+    (net "unnamed_net5"
+      (pins "PULSE1"-"2" "R3"-"2")
+    )
+    (net "unnamed_net6"
+      (pins "BIN1"-"2" "C3"-"1" "C4"-"1")
+    )
+    (net "Vee"
+      (pins "C1"-"2" "C2"-"2" "IF1"-"5" "IF1"-"6" "IF2"-"2" "M1"-"2" "M2"-"2" "M3"-"2" "R2"-"1" "R3"-"1")
+    )
+    (class geda_default "+5V" "+12V" "aLaser" "dLaser" "emitter" "GND" "unnamed_net1" "unnamed_net2" "unnamed_net3" "unnamed_net4" "unnamed_net5" "unnamed_net6" "Vee"
+      (circuit
+        (use_via via_762000_406400)
+      )
+      (rule (width 0.304800))
+    )
+  )
+    (wiring
+
+    )
+)
