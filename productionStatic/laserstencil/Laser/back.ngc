@@ -1,0 +1,49 @@
+( pcb2gcode 1.2.2 )
+( Software-independent Gcode )
+      
+
+
+
+
+S10000 ( RPM spindle speed. )
+G64 P0.00200 ( set maximum deviation from commanded toolpath )
+F2000.00000 ( Feedrate. )
+
+F2000.00000 ( Feedrate. )
+M3 ( Spindle on clockwise. )
+G04 P0 ( dwell for no time -- G64 should not smooth over this point )
+G00 Z0.25000 ( retract )
+
+G00 X0.06200 Y0.67200 ( rapid move to begin. )
+F1000.00000
+G01 Z0.00000
+G04 P0 ( dwell for no time -- G64 should not smooth over this point )
+F2000.00000
+X0.06200 Y0.67200
+X0.06200 Y0.53500
+X0.24000 Y0.53500
+X0.24000 Y0.67300
+X0.06200 Y0.67300
+X0.06200 Y0.67200
+G04 P0 ( dwell for no time -- G64 should not smooth over this point )
+G00 Z0.25000 ( retract )
+
+G00 X0.06200 Y0.89000 ( rapid move to begin. )
+F1000.00000
+G01 Z0.00000
+G04 P0 ( dwell for no time -- G64 should not smooth over this point )
+F2000.00000
+X0.06200 Y0.89000
+X0.06200 Y0.75300
+X0.24000 Y0.75300
+X0.24000 Y0.89100
+X0.06200 Y0.89100
+X0.06200 Y0.89000
+
+G04 P0 ( dwell for no time -- G64 should not smooth over this point )
+G00 Z0.25000 ( retract )
+
+M5 ( Spindle off. )
+M9 ( Coolant off. )
+M2 ( Program end. )
+
