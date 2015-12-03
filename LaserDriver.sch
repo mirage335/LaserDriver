@@ -455,3 +455,5 @@ N 51500 53500 51500 54000 4
 T 47400 53300 9 10 1 0 0 0 2
 Set to 1k for 3Vin = 3mA out,
 equivalent to ~3mW for BDR-209.
+T 50600 57900 9 10 1 0 0 0 1
+Set to 100k for better low-power linearity.
