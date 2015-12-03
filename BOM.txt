@@ -3,4 +3,6 @@
 
 2 * XT60 Connectors - http://www.hobbyking.com/hobbyking/store/__9572__Nylon_XT60_Connectors_Male_Female_5_pairs_GENUINE.html
 
-https://www.sparkfun.com/products/9576
+1 * S/FTP Cat6A Cable - http://www.amazon.com/dp/B004NPL4YE/?tag=hacdc-20
+
+1 * Transistor Heatsink - http://www.digikey.com/product-detail/en/6400BG/6400BG-ND/1625171 OR https://www.sparkfun.com/products/9576
