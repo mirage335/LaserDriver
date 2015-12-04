@@ -1,0 +1,6 @@
+#HardStart
+On connection to 12V power, current surges, on the order of >3.5A/5us, but less than 12A, have been known to occur and destroy expensive laser diodes. Lockout board is intended to prevent this, by disconnecting and forcing the control signal to ground.
+
+#Blanks
+Buying some low-cost diodes for testing purposes can be useful if the stability of the driver power supply is uncertain.
+BluRay 405nm Laser Diode, 130mA Recommended, 180mA Maximum - http://www.ebay.com/itm/405nm-150mW-Blu-ray-burning-UV-Ultraviolet-laser-diode-US-Seller-FAST-SHIP-/172001121159?hash=item280c10d387:g:-dsAAOSwxCxT3S8J
