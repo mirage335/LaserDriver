@@ -5,7 +5,7 @@ FileVersion[20091103]
 
 PCB["" 3220.00mil 2260.00mil]
 
-Grid[500.000000 0.0000 0.0000 1]
+Grid[500.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[8.00mil 0.10mil 10.00mil 0.10mil 13.00mil 7.00mil]
@@ -794,7 +794,7 @@ Via[1900.00mil 1450.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[2250.00mil 1470.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[1995.00mil 1440.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[50.00mil 1340.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
-Via[465.00mil 935.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
+Via[470.00mil 1055.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
 Via[260.00mil 1210.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
 Via[1275.00mil 1060.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
 Via[2605.00mil 1025.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
@@ -807,6 +807,9 @@ Via[2800.00mil 1350.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
 Via[2915.00mil 1210.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
 Via[3125.00mil 1310.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
 Via[2840.00mil 1510.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
+Via[230.00mil 1350.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
+Via[585.00mil 1175.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
+Via[785.00mil 1250.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(0X,1X)"]
 
 Element["" "TO220" "Q1" "-" 3000.00mil 800.00mil -100.00mil -390.00mil 1 100 ""]
 (
@@ -841,7 +844,7 @@ Element["" "TO220" "Q1" "-" 3000.00mil 800.00mil -100.00mil -390.00mil 1 100 ""]
 
 	)
 
-Element["" "0402" "R2" "10k" 73.8058mm 1380.00mil -31.50mil -31.50mil 0 100 ""]
+Element["" "0402" "R2" "100k" 73.8058mm 1380.00mil -31.50mil -31.50mil 0 100 ""]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1057,19 +1060,6 @@ Element["" "DO214AB" "D1" "-" 239.00mil 815.00mil -32.00mil 30.00mil 1 100 ""]
 
 	)
 
-Element["" "RADIAL_CAN 400" "L1" "10mH" 880.00mil 915.00mil -100.00mil -200.00mil 0 100 ""]
-(
-	Attribute("device" "INDUCTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "1" "1" "square"]
-	Pin[200.00mil 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "2" "2" ""]
-	ElementArc [100.00mil 0.0000 200.00mil 200.00mil 0 360 10.00mil]
-
-	)
-
 Element["" "RCY300P" "C1" "2200uF" 1480.00mil 865.00mil 300.00mil -150.00mil 3 100 ""]
 (
 	Attribute("device" "POLARIZED_CAPACITOR")
@@ -1186,13 +1176,43 @@ Element["" "VISHAY_T18" "R3" "10k" 3115.00mil 1545.00mil -85.00mil 120.00mil 0 1
 	ElementLine [-150.00mil -125.00mil 50.00mil -125.00mil 25.00mil]
 
 	)
+
+Element["" "Diode_DO-201AD_Horizontal_RM15" "D5" "3A" 835.00mil 1265.00mil -10.00mil 200.00mil 0 100 ""]
+(
+	Attribute("gedasymbols::url" "http://www.gedasymbols.org/user/erich_heinzle/kicad/footprints/Diodes/Diode_DO-201AD_Horizontal_RM15.fp")
+	Attribute("device" "DIODE")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[-300.00mil 0.0000 100.00mil 20.00mil 108.00mil 59.10mil "1" "1" "edge2"]
+	Pin[300.00mil 0.0000 100.00mil 20.00mil 108.00mil 59.10mil "2" "2" "square,edge2"]
+	ElementLine [-180.00mil 0.0000 -240.00mil 0.0000 10.00mil]
+	ElementLine [180.00mil 0.0000 240.00mil 0.0000 10.00mil]
+	ElementLine [140.00mil -110.00mil 140.00mil 110.00mil 10.00mil]
+	ElementLine [150.00mil -110.00mil 150.00mil 110.00mil 10.00mil]
+	ElementLine [160.00mil -110.00mil 160.00mil 110.00mil 10.00mil]
+	ElementLine [180.00mil 110.00mil 180.00mil -110.00mil 10.00mil]
+	ElementLine [180.00mil -110.00mil -180.00mil -110.00mil 10.00mil]
+	ElementLine [-180.00mil -110.00mil -180.00mil 110.00mil 10.00mil]
+	ElementLine [-180.00mil 110.00mil 180.00mil 110.00mil 10.00mil]
+
+	)
+
+Element["" "RADIAL_CAN 400" "L1" "10mH" 870.00mil 915.00mil -100.00mil -200.00mil 0 100 ""]
+(
+	Attribute("device" "INDUCTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "1" "1" "square"]
+	Pin[200.00mil 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "2" "2" ""]
+	ElementArc [100.00mil 0.0000 200.00mil 200.00mil 0 360 10.00mil]
+
+	)
 Layer(1 "top")
 (
-	Line[260.00mil 1345.00mil 180.00mil 1265.00mil 20.00mil 20.00mil "clearline"]
-	Line[535.00mil 1345.00mil 260.00mil 1345.00mil 20.00mil 20.00mil "clearline"]
-	Line[615.00mil 1265.00mil 535.00mil 1345.00mil 20.00mil 20.00mil "clearline"]
-	Line[1230.00mil 1265.00mil 615.00mil 1265.00mil 20.00mil 20.00mil "clearline"]
-	Line[1405.00mil 1090.00mil 1230.00mil 1265.00mil 20.00mil 20.00mil "clearline"]
 	Line[1505.00mil 1090.00mil 1405.00mil 1090.00mil 20.00mil 20.00mil "clearline"]
 	Line[1590.00mil 1175.00mil 1505.00mil 1090.00mil 20.00mil 20.00mil "clearline"]
 	Line[1840.00mil 1175.00mil 1590.00mil 1175.00mil 20.00mil 20.00mil "clearline"]
@@ -1246,8 +1266,6 @@ Layer(1 "top")
 	Line[1805.00mil 865.00mil 1880.00mil 790.00mil 20.00mil 20.00mil "clearline"]
 	Line[1480.00mil 865.00mil 1805.00mil 865.00mil 20.00mil 20.00mil "clearline"]
 	Line[1430.00mil 915.00mil 1480.00mil 865.00mil 20.00mil 20.00mil "clearline"]
-	Line[1080.00mil 915.00mil 1430.00mil 915.00mil 20.00mil 20.00mil "clearline"]
-	Line[780.00mil 815.00mil 880.00mil 915.00mil 20.00mil 20.00mil "clearline"]
 	Line[348.00mil 815.00mil 780.00mil 815.00mil 20.00mil 20.00mil "clearline"]
 	Line[348.00mil 1065.00mil 348.00mil 815.00mil 20.00mil 20.00mil "clearline"]
 	Line[1905.00mil 1860.00mil 2055.00mil 2010.00mil 20.00mil 20.00mil "clearline"]
@@ -1282,6 +1300,24 @@ Layer(1 "top")
 	Line[2580.00mil 1435.00mil 2347.00mil 1435.00mil 20.00mil 20.00mil "clearline"]
 	Line[67.5620mm 38.4790mm 2580.00mil 1435.00mil 20.00mil 20.00mil "clearline"]
 	Line[70.1150mm 38.4790mm 67.5620mm 38.4790mm 20.00mil 20.00mil "clearline"]
+	Line[180.00mil 1265.00mil 225.00mil 1310.00mil 20.00mil 20.00mil "clearline"]
+	Line[225.00mil 1310.00mil 450.00mil 1310.00mil 20.00mil 20.00mil "clearline"]
+	Line[450.00mil 1310.00mil 485.00mil 1345.00mil 20.00mil 20.00mil "clearline"]
+	Line[485.00mil 1345.00mil 1230.00mil 1345.00mil 20.00mil 20.00mil "clearline"]
+	Line[1230.00mil 1345.00mil 1370.00mil 1205.00mil 20.00mil 20.00mil "clearline"]
+	Line[1370.00mil 1205.00mil 1370.00mil 1125.00mil 20.00mil 20.00mil "clearline"]
+	Line[1370.00mil 1125.00mil 1405.00mil 1090.00mil 20.00mil 20.00mil "clearline"]
+	Line[535.00mil 1265.00mil 615.00mil 1265.00mil 20.00mil 20.00mil "clearline"]
+	Line[615.00mil 1265.00mil 755.00mil 1125.00mil 20.00mil 20.00mil "clearline"]
+	Line[755.00mil 1125.00mil 755.00mil 945.00mil 20.00mil 20.00mil "clearline"]
+	Line[755.00mil 945.00mil 735.00mil 925.00mil 20.00mil 20.00mil "clearline"]
+	Line[735.00mil 925.00mil 488.00mil 925.00mil 20.00mil 20.00mil "clearline"]
+	Line[488.00mil 925.00mil 348.00mil 1065.00mil 20.00mil 20.00mil "clearline"]
+	Line[870.00mil 915.00mil 870.00mil 905.00mil 20.00mil 20.00mil "clearline"]
+	Line[870.00mil 905.00mil 780.00mil 815.00mil 20.00mil 20.00mil "clearline"]
+	Line[1070.00mil 915.00mil 1430.00mil 915.00mil 20.00mil 20.00mil "clearline"]
+	Line[1070.00mil 915.00mil 1070.00mil 1200.00mil 20.00mil 20.00mil "clearline"]
+	Line[1070.00mil 1200.00mil 1135.00mil 1265.00mil 20.00mil 20.00mil "clearline"]
 	Polygon("clearpoly,fullpoly")
 	(
 		[35.00mil 2170.00mil] [1445.00mil 2170.00mil] [1445.00mil 1385.00mil] [35.00mil 1385.00mil] 
@@ -1492,6 +1528,7 @@ NetList()
 	Net("unnamed_net2" "(unknown)")
 	(
 		Connect("C1-1")
+		Connect("D5-2")
 		Connect("L1-2")
 		Connect("L2-1")
 	)
@@ -1500,6 +1537,7 @@ NetList()
 		Connect("D1-1")
 		Connect("D2-1")
 		Connect("D3-1")
+		Connect("D5-1")
 		Connect("L1-1")
 	)
 	Net("Vee" "(unknown)")

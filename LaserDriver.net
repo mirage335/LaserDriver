@@ -1,5 +1,5 @@
-unnamed_net3	D1-1 D3-1 D2-1 L1-1 
-unnamed_net2	L2-1 C1-1 L1-2 
+unnamed_net3	D5-1 D1-1 D3-1 D2-1 L1-1 
+unnamed_net2	D5-2 L2-1 C1-1 L1-2 
 aLaser	F1-1 IF1-8 
 dLaser	IF1-7 CTRL1-7 
 Vee	R3-3 IF2-2 D3-2 R1-1 C2-2 C1-2 LASER1-5 IF1-6 IF1-5 CTRL1-6 CTRL1-5 

@@ -1,0 +1,15 @@
+unnamed_net5	U2-2 R3-1 
+unnamed_net4	U3-2 R4-1 
+unnamed_net3	U2-8 F1-1 
+lockPlus	R3-2 R4-2 C1-2 U1-6 U1-7 
+unnamed_net2	R2-2 U1-5 
+unnamed_net1	R1-1 U1-2 
+aLaserSafe	U3-5 IF2-8 
+dLaserSafe	U2-6 U2-7 IF2-7 
+aLaser	U3-6 U3-7 IF1-8 
+dLaser	U2-5 IF1-7 
+Vee	U3-8 U3-3 U2-3 F1-2 C1-1 U1-8 U1-3 L1-2 IF2-6 IF2-5 IF1-6 IF1-5 
++12V	R2-1 R1-2 IF2-4 IF1-4 
+emitter	IF2-3 IF1-3 
+GND	L1-1 IF2-9 IF2-2 IF1-9 IF1-2 
++5V	IF2-1 IF1-1 

@@ -9,7 +9,7 @@ Grid[500.000000 0.0000 0.0000 1]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[10.00mil 0.10mil 10.00mil 0.10mil 13.00mil 7.00mil]
-Flags("showdrc,nameonpcb,uniquename,clearnew,newfullpoly,snappin")
+Flags("showdrc,nameonpcb,uniquename,clearnew,newfullpoly,snappin,locknames")
 Groups("1,c:2,s:3")
 Styles["Signal,10.00mil,34.00mil,20.00mil,10.00mil:Power,20.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -790,7 +790,7 @@ Attribute("PCB::grid::size" "5.00mil")
 Via[150.00mil 280.00mil 34.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[150.00mil 498.00mil 34.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[665.00mil 605.00mil 34.00mil 20.00mil 0.0000 20.00mil "" ""]
-Via[565.00mil 670.00mil 60.00mil 20.00mil 0.0000 35.00mil "" "thermal(0X,1X)"]
+Via[580.00mil 680.00mil 60.00mil 20.00mil 0.0000 35.00mil "" "thermal(0X,1X)"]
 
 Element["onsolder" "DO214AB" "D1" "-" 150.00mil 389.00mil 0.0000 -227.00mil 2 100 "auto"]
 (
@@ -878,8 +878,13 @@ Element["" "538-95540-2881" "LASER1" "-" 330.00mil 145.00mil 40.00mil 140.00mil 
 
 Element["" "XT60" "L2" "60A" 185.00mil 895.00mil -155.00mil 100.00mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 6.0000mm 20.00mil 6.1524mm 4.7500mm "" "1" "edge2"]
-	Pin[7.2000mm 0.0000 6.0000mm 20.00mil 6.1524mm 4.7500mm "" "2" "edge2"]
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0.0000 0.0000 6.0000mm 20.00mil 6.1524mm 4.7500mm "1" "1" "edge2"]
+	Pin[7.2000mm 0.0000 6.0000mm 20.00mil 6.1524mm 4.7500mm "2" "2" "edge2"]
 	ElementLine [-4.3000mm -4.0000mm -4.3000mm 4.1000mm 10.00mil]
 	ElementLine [-4.3000mm 4.1000mm 11.4000mm 4.1000mm 10.00mil]
 	ElementLine [11.4000mm 4.1000mm 11.4000mm -4.0000mm 10.00mil]
@@ -889,6 +894,30 @@ Element["" "XT60" "L2" "60A" 185.00mil 895.00mil -155.00mil 100.00mil 0 100 ""]
 	ElementLine [0.0000 -4.0000mm 0.0000 4.1000mm 10.00mil]
 	ElementLine [7.2000mm -4.0000mm 7.2000mm 4.1000mm 10.00mil]
 	ElementLine [-4.3000mm 0.0000 11.4000mm 0.0000 10.00mil]
+
+	)
+
+Element["onsolder" "0402" "C2" "1n" 460.74mil 655.00mil -31.50mil 31.50mil 0 100 "auto"]
+(
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-15.74mil -3.93mil -15.74mil 3.93mil 19.68mil 20.00mil 25.68mil "1" "1" "onsolder,square"]
+	Pad[15.74mil -3.93mil 15.74mil 3.93mil 19.68mil 20.00mil 25.68mil "2" "2" "onsolder,square"]
+
+	)
+
+Element["onsolder" "0402" "C1" "1n" 460.74mil 710.00mil -31.50mil 31.50mil 0 100 "auto"]
+(
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-15.74mil -3.93mil -15.74mil 3.93mil 19.68mil 20.00mil 25.68mil "1" "1" "onsolder,square"]
+	Pad[15.74mil -3.93mil 15.74mil 3.93mil 19.68mil 20.00mil 25.68mil "2" "2" "onsolder,square"]
 
 	)
 Layer(1 "top")
@@ -908,12 +937,7 @@ Layer(1 "top")
 	Line[520.00mil 340.00mil 520.00mil 435.00mil 20.00mil 20.00mil "clearline"]
 	Line[520.00mil 435.00mil 580.00mil 495.00mil 20.00mil 20.00mil "clearline"]
 	Line[185.00mil 895.00mil 185.00mil 890.00mil 20.00mil 20.00mil "clearline"]
-	Line[580.00mil 495.00mil 185.00mil 890.00mil 20.00mil 20.00mil "clearline"]
-	Line[680.00mil 545.00mil 575.00mil 545.00mil 20.00mil 20.00mil "clearline"]
-	Line[575.00mil 545.00mil 405.00mil 715.00mil 20.00mil 20.00mil "clearline"]
-	Line[405.00mil 715.00mil 405.00mil 21.1210mm 20.00mil 20.00mil "clearline"]
 	Line[11.8990mm 22.7720mm 330.00mil 1035.00mil 20.00mil 20.00mil "clearline"]
-	Line[405.00mil 21.1210mm 11.8990mm 895.00mil 20.00mil 20.00mil "clearline"]
 	Line[580.00mil 295.00mil 565.00mil 295.00mil 20.00mil 20.00mil "clearline"]
 	Line[70.00mil 580.00mil 70.00mil 578.00mil 20.00mil 20.00mil "clearline"]
 	Line[150.00mil 280.00mil 245.00mil 280.00mil 20.00mil 20.00mil "clearline"]
@@ -940,6 +964,8 @@ Layer(1 "top")
 	Line[730.00mil 415.00mil 730.00mil 610.00mil 20.00mil 20.00mil "clearline"]
 	Line[695.00mil 785.00mil 695.00mil 645.00mil 20.00mil 20.00mil "clearline"]
 	Line[730.00mil 610.00mil 695.00mil 645.00mil 20.00mil 20.00mil "clearline"]
+	Line[485.00mil 22.3130mm 11.8990mm 895.00mil 20.00mil 20.00mil "clearline"]
+	Line[185.00mil 895.00mil 255.00mil 895.00mil 20.00mil 20.00mil "clearline"]
 	Polygon("clearpoly,fullpoly")
 	(
 		[10.00mil 10.00mil] [10.00mil 1075.00mil] [630.00mil 1075.00mil] [645.00mil 1060.00mil] [645.00mil 960.00mil] 
@@ -966,6 +992,20 @@ Layer(2 "bottom")
 	Line[7.5020mm 145.00mil 5.3320mm 1.5130mm 20.00mil 20.00mil ""]
 	Line[680.00mil 245.00mil 430.00mil 245.00mil 20.00mil 20.00mil ""]
 	Line[430.00mil 245.00mil 330.00mil 145.00mil 20.00mil 20.00mil ""]
+	Line[476.48mil 22.5294mm 11.8990mm 895.00mil 20.00mil 20.00mil "clearline"]
+	Line[445.00mil 710.00mil 320.00mil 835.00mil 20.00mil 20.00mil "clearline"]
+	Line[185.00mil 895.00mil 260.00mil 895.00mil 20.00mil 20.00mil "clearline"]
+	Line[260.00mil 895.00mil 325.00mil 830.00mil 20.00mil 20.00mil "clearline"]
+	Line[476.48mil 22.5294mm 476.48mil 655.00mil 20.00mil 20.00mil "clearline"]
+	Line[680.00mil 545.00mil 615.00mil 545.00mil 20.00mil 20.00mil "clearline"]
+	Line[580.00mil 495.00mil 580.00mil 525.00mil 20.00mil 20.00mil "clearline"]
+	Line[580.00mil 525.00mil 505.00mil 600.00mil 20.00mil 20.00mil "clearline"]
+	Line[505.00mil 600.00mil 470.00mil 600.00mil 20.00mil 20.00mil "clearline"]
+	Line[470.00mil 600.00mil 445.00mil 625.00mil 20.00mil 20.00mil "clearline"]
+	Line[445.00mil 710.00mil 445.00mil 625.00mil 20.00mil 20.00mil "clearline"]
+	Line[615.00mil 545.00mil 525.00mil 635.00mil 20.00mil 20.00mil "clearline"]
+	Line[525.00mil 635.00mil 496.48mil 635.00mil 20.00mil 20.00mil "clearline"]
+	Line[496.48mil 635.00mil 476.48mil 655.00mil 20.00mil 20.00mil "clearline"]
 	Polygon("clearpoly,fullpoly")
 	(
 		[10.00mil 10.00mil] [10.00mil 1075.00mil] [630.00mil 1075.00mil] [645.00mil 1060.00mil] [645.00mil 960.00mil] 
@@ -1032,6 +1072,8 @@ NetList()
 	)
 	Net("laserPWRminus" "(unknown)")
 	(
+		Connect("C1-2")
+		Connect("C2-2")
 		Connect("D1-2")
 		Connect("L1-2")
 		Connect("L2-2")
@@ -1040,6 +1082,8 @@ NetList()
 	)
 	Net("laserPWRplus" "(unknown)")
 	(
+		Connect("C1-1")
+		Connect("C2-1")
 		Connect("D1-1")
 		Connect("L1-1")
 		Connect("L2-1")

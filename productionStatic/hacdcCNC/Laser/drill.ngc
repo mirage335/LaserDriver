@@ -9,7 +9,7 @@ G90       (Absolute coordinates.)
 S10000     (RPM spindle speed.)
 
 G00 Z0.19685 (Retract)
-T41
+T42
 M5      (Spindle stop.)
 (MSG, Change tool bit to drill size 0.03800 inch)
 M6      (Tool change.)
@@ -22,7 +22,7 @@ X0.80500 Y0.93500
 X0.80500 Y1.03500
 
 G00 Z0.19685 (Retract)
-T42
+T43
 M5      (Spindle stop.)
 (MSG, Change tool bit to drill size 0.03500 inch)
 M6      (Tool change.)
@@ -39,7 +39,7 @@ X0.68000 Y0.65500
 X0.68000 Y0.55500
 
 G00 Z0.19685 (Retract)
-T43
+T44
 M5      (Spindle stop.)
 (MSG, Change tool bit to drill size 0.18700 inch)
 M6      (Tool change.)
@@ -50,7 +50,7 @@ G81 R0.19685 Z0.00000 F0.98425 X0.18500 Y0.20500
 X0.46850 Y0.20500
 
 G00 Z0.19685 (Retract)
-T44
+T45
 M5      (Spindle stop.)
 (MSG, Change tool bit to drill size 0.12800 inch)
 M6      (Tool change.)
@@ -61,7 +61,7 @@ G81 R0.19685 Z0.00000 F0.98425 X0.33000 Y0.50500
 X0.33000 Y0.95500
 
 G00 Z0.19685 (Retract)
-T45
+T46
 M5      (Spindle stop.)
 (MSG, Change tool bit to drill size 0.06300 inch)
 M6      (Tool change.)
@@ -72,7 +72,7 @@ G81 R0.19685 Z0.00000 F0.98425 X0.20990 Y0.42040
 X0.20990 Y1.04040
 
 G00 Z0.19685 (Retract)
-T46
+T47
 M5      (Spindle stop.)
 (MSG, Change tool bit to drill size 0.02000 inch)
 M6      (Tool change.)
@@ -84,14 +84,14 @@ X0.15000 Y0.82000
 X0.66500 Y0.49500
 
 G00 Z0.19685 (Retract)
-T47
+T48
 M5      (Spindle stop.)
 (MSG, Change tool bit to drill size 0.03500 inch)
 M6      (Tool change.)
 M0      (Temporary machine stop.)
 M3      (Spindle on clockwise.)
 
-G81 R0.19685 Z0.00000 F0.98425 X0.56500 Y0.43000
+G81 R0.19685 Z0.00000 F0.98425 X0.58000 Y0.42000
 
 G00 Z0.19685 (All done -- retract)
 
