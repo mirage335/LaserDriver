@@ -49,6 +49,7 @@ Laser drive electronic designs may wish to follow similar standards.
 Potentiometers are provided for configuration down to extremely low-power (<<3mW) maximum output, in addition to a "binary" bypass switch. For photolithography, this allows the laser to be rapidly switched on at a precise power level, calibrated to expose the photoresist. Vector writing recommended, or at least vector then raster.
 
 #Future Work
+*) Switching power supply using similar pinout. Chips to consider include the LT3518, LED5000, TPS92513HV, LM3409HV, and others.
 *) Programmable ultra-fast (<<200ns) pulse-mode laser driver using similar pinout.
 *) Beam stearing optoelectronics, for VLSI photolithographic exposure image projection.
 
