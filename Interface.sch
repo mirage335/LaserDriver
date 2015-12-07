@@ -101,7 +101,7 @@ value=60A
 T 53700 47000 5 10 0 0 0 0 1
 footprint=XT60
 }
-N 54500 47000 56100 47000 4
+N 54500 47000 55700 47000 4
 T 56000 46200 9 10 1 0 90 0 1
 1V ~= 1A
 C 45500 46700 1 0 1 io-1.sym
@@ -234,28 +234,9 @@ and "BINARY" switch to fine tune photoexposure
 settings (often a fraction of a milliwatt).
 C 48700 47000 1 90 0 vee-1.sym
 C 46600 46400 1 0 0 12V-plus-1.sym
-N 57100 46100 56600 46100 4
-C 56100 47000 1 0 0 switch-spst-1.sym
-{
-T 56500 47700 5 10 0 0 0 0 1
-device=SPST
-T 56100 47000 5 10 0 0 0 0 1
-description=$0.80 HobbyKing XT60
-T 56100 47000 5 10 0 0 0 0 1
-value=60A
-T 56100 47000 5 10 0 0 0 0 1
-footprint=XT60
-T 56100 46800 5 10 1 1 0 0 1
-refdes=PULSE1
-}
-N 56900 47000 57100 47000 4
-C 56600 45900 1 90 0 vee-1.sym
-T 57400 46200 9 10 1 0 90 0 1
-1V ~= 10A
-T 48000 49600 9 10 1 0 0 0 3
+T 48000 49600 9 10 1 0 0 0 2
 WARNING
-High-current cable and connector (XT60) strongly recommended for pulse mode.
-Do not operate laser in pulse mode under linear control signal.
+High-current cable and connector (XT60) strongly recommended.
 C 46800 43000 1 0 1 io-1.sym
 {
 T 45900 43200 5 10 1 0 0 6 1
@@ -293,11 +274,11 @@ description=-
 T 50300 46400 5 10 0 0 0 0 1
 value=-
 }
-T 53100 45000 9 10 1 0 0 0 4
-A 1uF capacitor may permit uncontrolled 5W/1us pulse
-emission. Though even 0.5W/10us may be unlikely, the
-1uF capacitor should be left disconnected in favor of
-0.1uF if possible.
+T 53100 45100 9 10 1 0 0 0 4
+Emitter capacitors may enhance stability, or encourage pulse
+emissions on the order of 3.5A/5us. These pulse emissions
+can cause catastrophic optical damage (destroying laser diodes).
+Leave disconnected if possible.
 C 55100 47000 1 270 0 capacitor-1.sym
 {
 T 55800 46800 5 10 0 0 270 0 1
@@ -305,42 +286,12 @@ device=CAPACITOR
 T 56000 46800 5 10 0 0 270 0 1
 symversion=0.1
 T 55300 46900 5 10 1 1 270 0 1
-refdes=C2
+refdes=C1
 T 55200 46600 5 10 1 1 270 0 1
 value=0.1u
 T 55100 47000 5 10 0 0 0 0 1
 description=$0.10 MOUSER 80-C0603C104K3R
 T 55100 47000 5 10 0 0 0 0 1
-footprint=0603
-}
-C 54500 43200 1 270 0 capacitor-1.sym
-{
-T 55200 43000 5 10 0 0 270 0 1
-device=CAPACITOR
-T 55400 43000 5 10 0 0 270 0 1
-symversion=0.1
-T 54700 43100 5 10 1 1 270 0 1
-refdes=C4
-T 54600 42800 5 10 1 1 270 0 1
-value=1u
-T 54500 43200 5 10 0 0 0 0 1
-description=$0.15 MOUSER 80-C0603C105K3P
-T 54500 43200 5 10 0 0 0 0 1
-footprint=0603
-}
-C 54600 47000 1 270 0 capacitor-1.sym
-{
-T 55300 46800 5 10 0 0 270 0 1
-device=CAPACITOR
-T 55500 46800 5 10 0 0 270 0 1
-symversion=0.1
-T 54800 46900 5 10 1 1 270 0 1
-refdes=C1
-T 54700 46600 5 10 1 1 270 0 1
-value=1u
-T 54600 47000 5 10 0 0 0 0 1
-description=$0.15 MOUSER 80-C0603C105K3P
-T 54600 47000 5 10 0 0 0 0 1
 footprint=0603
 }
 C 54000 43200 1 270 0 capacitor-1.sym
@@ -388,16 +339,18 @@ refdes=TYPE1
 }
 N 53500 42800 53500 42900 4
 N 53500 42900 53000 42900 4
-C 57200 46100 1 90 0 resistor-1.sym
+C 54500 43200 1 270 0 capacitor-1.sym
 {
-T 56800 46400 5 10 0 0 90 0 1
-device=RESISTOR
-T 57100 46300 5 10 1 1 90 0 1
-refdes=R3
-T 57200 46600 5 10 1 1 90 0 1
-value=0.1
-T 57200 46100 5 10 0 0 0 0 1
-footprint=JUMPER2
-T 57200 46100 5 10 0 0 0 0 1
-description=$0.84 MOUSER 71-LVR05R1000FE12
+T 55200 43000 5 10 0 0 270 0 1
+device=CAPACITOR
+T 55400 43000 5 10 0 0 270 0 1
+symversion=0.1
+T 54700 43100 5 10 1 1 270 0 1
+refdes=C2
+T 54600 42800 5 10 1 1 270 0 1
+value=0.1u
+T 54500 43200 5 10 0 0 0 0 1
+description=$0.10 MOUSER 80-C0603C104K3R
+T 54500 43200 5 10 0 0 0 0 1
+footprint=0603
 }

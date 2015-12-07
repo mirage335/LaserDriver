@@ -27,9 +27,9 @@ device=RESISTOR
 T 51500 56700 5 10 1 1 90 0 1
 refdes=R2
 T 51600 56500 5 10 1 1 90 0 1
-value=10k
+value=100k
 T 51600 56500 5 10 0 0 0 0 1
-description=$0.10 MOUSER 71-CRCW0402-10K-E3
+description=$0.10 MOUSER 71-CRCW0402-100K-E3
 T 51600 56500 5 10 0 0 0 0 1
 footprint=0402
 }
@@ -457,3 +457,18 @@ Set to 1k for 3Vin = 3mA out,
 equivalent to ~3mW for BDR-209.
 T 50600 57900 9 10 1 0 0 0 1
 Set to 100k for better low-power linearity.
+C 48700 57800 1 0 0 diode-1.sym
+{
+T 49100 58400 5 10 0 0 0 0 1
+device=DIODE
+T 49000 58300 5 10 1 1 0 0 1
+refdes=D5
+T 48700 57800 5 10 0 0 0 0 1
+description=$0.32 MOUSER 583-RL851-B
+T 48700 57800 5 10 0 0 0 0 1
+footprint=Diode_DO-201AD_Horizontal_RM15
+T 48700 57800 5 10 0 0 0 0 1
+value=3A
+}
+N 49600 58000 49600 57500 4
+N 48700 58000 48700 57500 4
