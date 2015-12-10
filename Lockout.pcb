@@ -9,7 +9,7 @@ Grid[500.000000 0.0000 0.0000 1]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 0.10mil 6.00mil 0.10mil 13.00mil 7.00mil]
-Flags("nameonpcb,uniquename,clearnew,newfullpoly,snappin")
+Flags("nameonpcb,uniquename,clearnew,newfullpoly,snappin,locknames")
 Groups("1,c:2,s:3")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -1024,17 +1024,15 @@ Element["onsolder" "538-95540-2881" "IF2" "-" 52.0680mm 8.7720mm 100.00mil 200.0
 
 	)
 
-Element["" "0805" "L1" "100uH" 820.35mil 6.8670mm -31.50mil -31.50mil 0 100 ""]
+Element["" "0402" "R5" "1" 840.74mil 270.00mil -31.50mil -31.50mil 0 100 ""]
 (
-	Attribute("device" "INDUCTOR")
+	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
 	Attribute("manufacturer_part_number" "unknown")
 	Attribute("vendor" "unknown")
 	Attribute("vendor_part_number" "unknown")
-	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
-	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
-	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
-	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+	Pad[-15.74mil -3.93mil -15.74mil 3.93mil 19.68mil 20.00mil 25.68mil "1" "1" "square"]
+	Pad[15.74mil -3.93mil 15.74mil 3.93mil 19.68mil 20.00mil 25.68mil "2" "2" "square"]
 
 	)
 Layer(1 "top")
@@ -1118,6 +1116,8 @@ Layer(1 "top")
 	Line[29.0533mm 8.2952mm 31.6522mm 8.2952mm 10.00mil 20.00mil "clearline,auto"]
 	Line[31.6522mm 8.2952mm 32.3830mm 9.0260mm 10.00mil 20.00mil "clearline,auto"]
 	Line[25.4613mm 6.8670mm 855.78mil 6.8670mm 10.00mil 20.00mil "clearline,auto"]
+	Line[19.9300mm 6.8670mm 20.9460mm 6.8670mm 10.00mil 20.00mil "clearline"]
+	Line[20.9460mm 6.8670mm 825.00mil 270.00mil 10.00mil 20.00mil "clearline"]
 	Polygon("clearpoly,fullpoly")
 	(
 		[3.4270mm 23.5040mm] [3.4270mm 5.3430mm] [18.0320mm 5.3430mm] [18.7940mm 4.5810mm] [18.7940mm 0.3900mm] 
@@ -1205,10 +1205,10 @@ Layer(5 "top silk")
 	Line[14.2662mm 9.8384mm 14.6662mm 10.2384mm 6.00mil 20.00mil "clearline"]
 	Line[14.6662mm 9.8384mm 14.2662mm 10.2384mm 6.00mil 20.00mil "clearline"]
 	Line[18.5162mm 8.7684mm 18.5162mm 20.1984mm 10.00mil 20.00mil "clearline"]
-	Line[11.1562mm 23.4284mm 18.5162mm 23.4284mm 10.00mil 20.00mil "clearline"]
+	Line[439.22mil 23.4284mm 18.5162mm 23.4284mm 10.00mil 20.00mil "clearline"]
 	Line[18.5162mm 19.6384mm 18.5162mm 23.4284mm 10.00mil 20.00mil "clearline"]
 	Line[0.1162mm 23.4284mm 11.1662mm 23.4284mm 10.00mil 20.00mil "clearline"]
-	Line[11.1562mm 5.5284mm 18.5162mm 5.5284mm 10.00mil 20.00mil "clearline"]
+	Line[439.22mil 5.5284mm 18.5162mm 5.5284mm 10.00mil 20.00mil "clearline"]
 	Line[0.1162mm 5.5284mm 11.1662mm 5.5284mm 10.00mil 20.00mil "clearline"]
 	Line[0.1162mm 5.5284mm 0.1162mm 23.4284mm 10.00mil 20.00mil "clearline"]
 	Line[18.5162mm 5.5284mm 18.5162mm 9.0284mm 10.00mil 20.00mil "clearline"]
@@ -1269,7 +1269,7 @@ NetList()
 		Connect("IF1-9")
 		Connect("IF2-2")
 		Connect("IF2-9")
-		Connect("L1-1")
+		Connect("R5-1")
 	)
 	Net("lockPlus" "(unknown)")
 	(
@@ -1312,7 +1312,7 @@ NetList()
 		Connect("IF1-6")
 		Connect("IF2-5")
 		Connect("IF2-6")
-		Connect("L1-2")
+		Connect("R5-2")
 		Connect("U1-3")
 		Connect("U1-8")
 		Connect("U2-3")

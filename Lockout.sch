@@ -83,21 +83,6 @@ net=emitter:1
 T 45900 41800 5 10 1 1 0 7 1
 value=IO
 }
-C 46600 48900 1 0 0 inductor-1.sym
-{
-T 46800 49400 5 10 0 0 0 0 1
-device=INDUCTOR
-T 46800 49600 5 10 0 0 0 0 1
-symversion=0.1
-T 46600 48900 5 10 0 0 0 0 1
-footprint=0805
-T 46600 48900 5 10 0 0 0 0 1
-description=$0.45 MOUSER 80-L0806C101KPWST
-T 46800 49000 5 10 1 1 0 0 1
-refdes=L1
-T 46600 48900 5 10 1 1 0 0 1
-value=100uH
-}
 C 47700 49000 1 180 0 vee-1.sym
 C 46700 48700 1 0 1 gnd-1.sym
 C 54300 43300 1 0 0 vee-1.sym
@@ -325,3 +310,16 @@ description=$4.41 MOUSER 849-LCC110
 }
 C 50500 42200 1 90 0 vee-1.sym
 C 50500 39800 1 90 0 vee-1.sym
+C 46600 48900 1 0 0 resistor-1.sym
+{
+T 46900 49300 5 10 0 0 0 0 1
+device=RESISTOR
+T 46800 49000 5 10 1 1 0 0 1
+refdes=R5
+T 46600 48900 5 10 1 1 0 0 1
+value=1
+T 46600 48900 5 10 0 0 270 0 1
+description=$0.10 MOUSER 71-CRCW0402-1-E3
+T 46600 48900 5 10 0 0 270 0 1
+footprint=0402
+}

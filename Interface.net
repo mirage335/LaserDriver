@@ -1,13 +1,12 @@
-unnamed_net6	BIN1-2 C3-1 C4-1 
-unnamed_net5	R3-2 PULSE1-2 
+unnamed_net5	C1-1 BIN1-2 
 unnamed_net4	TYPE1-2 R5-2 
 unnamed_net3	M3-3 R1-2 M2-3 M1-3 
-unnamed_net2	C1-1 C2-1 PULSE1-1 SAFETY1-2 R2-2 
+unnamed_net2	SAFETY1-2 R2-2 
 unnamed_net1	R6-1 R5-1 R4-2 
 aLaser	TYPE1-1 D1-1 BIN1-1 R6-2 IF1-8 
 dLaser	R4-1 IF1-7 
-Vee	R3-1 IF2-2 M3-2 M2-2 M1-2 C1-2 C2-2 R2-1 IF1-6 IF1-5 
+Vee	R3-2 IF2-2 M3-2 M2-2 M1-2 R2-1 IF1-6 IF1-5 
 +12V	M3-1 M2-1 M1-1 IF1-4 
 emitter	IF2-1 SAFETY1-1 R1-1 IF1-3 
-GND	C3-2 C4-2 R5-3 D1-2 R6-3 IF1-9 IF1-2 
+GND	R3-1 C1-2 R5-3 D1-2 R6-3 IF1-9 IF1-2 
 +5V	IF1-1 

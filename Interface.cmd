@@ -4,6 +4,10 @@
 ChangePinName(R3, 1, 1)
 ChangePinName(R3, 2, 2)
 
+# Start of element C1
+ChangePinName(C1, 2, 2)
+ChangePinName(C1, 1, 1)
+
 # Start of element TYPE1
 ChangePinName(TYPE1, 1, 1)
 ChangePinName(TYPE1, 2, 2)
@@ -11,22 +15,6 @@ ChangePinName(TYPE1, 2, 2)
 # Start of element BIN1
 ChangePinName(BIN1, 1, 1)
 ChangePinName(BIN1, 2, 2)
-
-# Start of element C3
-ChangePinName(C3, 2, 2)
-ChangePinName(C3, 1, 1)
-
-# Start of element C1
-ChangePinName(C1, 2, 2)
-ChangePinName(C1, 1, 1)
-
-# Start of element C4
-ChangePinName(C4, 2, 2)
-ChangePinName(C4, 1, 1)
-
-# Start of element C2
-ChangePinName(C2, 2, 2)
-ChangePinName(C2, 1, 1)
 
 # Start of element M3
 ChangePinName(M3, 3, 3)
@@ -36,10 +24,6 @@ ChangePinName(M3, 1, 1)
 # Start of element IF2
 ChangePinName(IF2, 2, 2)
 ChangePinName(IF2, 1, 1)
-
-# Start of element PULSE1
-ChangePinName(PULSE1, 1, 1)
-ChangePinName(PULSE1, 2, 2)
 
 # Start of element R5
 ChangePinName(R5, 1, ccw)

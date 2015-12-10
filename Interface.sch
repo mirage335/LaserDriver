@@ -274,43 +274,6 @@ description=-
 T 50300 46400 5 10 0 0 0 0 1
 value=-
 }
-T 53100 45100 9 10 1 0 0 0 4
-Emitter capacitors may enhance stability, or encourage pulse
-emissions on the order of 3.5A/5us. These pulse emissions
-can cause catastrophic optical damage (destroying laser diodes).
-Leave disconnected if possible.
-C 55100 47000 1 270 0 capacitor-1.sym
-{
-T 55800 46800 5 10 0 0 270 0 1
-device=CAPACITOR
-T 56000 46800 5 10 0 0 270 0 1
-symversion=0.1
-T 55300 46900 5 10 1 1 270 0 1
-refdes=C1
-T 55200 46600 5 10 1 1 270 0 1
-value=0.1u
-T 55100 47000 5 10 0 0 0 0 1
-description=$0.10 MOUSER 80-C0603C104K3R
-T 55100 47000 5 10 0 0 0 0 1
-footprint=0603
-}
-C 54000 43200 1 270 0 capacitor-1.sym
-{
-T 54700 43000 5 10 0 0 270 0 1
-device=CAPACITOR
-T 54900 43000 5 10 0 0 270 0 1
-symversion=0.1
-T 54200 43100 5 10 1 1 270 0 1
-refdes=C3
-T 54100 42800 5 10 1 1 270 0 1
-value=0.1u
-T 54000 43200 5 10 0 0 0 0 1
-description=$0.10 MOUSER 80-C0603C104K3R
-T 54000 43200 5 10 0 0 0 0 1
-footprint=0603
-}
-C 54100 42000 1 0 0 gnd-1.sym
-N 54700 43200 54200 43200 4
 C 54700 44000 1 270 0 switch-spst-1.sym
 {
 T 55400 43600 5 10 0 0 270 0 1
@@ -339,6 +302,8 @@ refdes=TYPE1
 }
 N 53500 42800 53500 42900 4
 N 53500 42900 53000 42900 4
+C 49100 43500 1 180 0 vee-1.sym
+C 48100 43200 1 0 1 gnd-1.sym
 C 54500 43200 1 270 0 capacitor-1.sym
 {
 T 55200 43000 5 10 0 0 270 0 1
@@ -346,28 +311,24 @@ device=CAPACITOR
 T 55400 43000 5 10 0 0 270 0 1
 symversion=0.1
 T 54700 43100 5 10 1 1 270 0 1
-refdes=C2
+refdes=C1
 T 54600 42800 5 10 1 1 270 0 1
-value=0.1u
+value=1u
 T 54500 43200 5 10 0 0 0 0 1
-description=$0.10 MOUSER 80-C0603C104K3R
+description=$0.15 MOUSER 80-C0603C105K3P
 T 54500 43200 5 10 0 0 0 0 1
 footprint=0603
 }
-C 48000 43400 1 0 0 inductor-1.sym
+C 48000 43400 1 0 0 resistor-1.sym
 {
-T 48200 43900 5 10 0 0 0 0 1
-device=INDUCTOR
-T 48200 44100 5 10 0 0 0 0 1
-symversion=0.1
-T 48000 43400 5 10 0 0 0 0 1
-footprint=0805
-T 48000 43400 5 10 0 0 0 0 1
-description=$0.45 MOUSER 80-L0806C101KPWST
+T 48300 43800 5 10 0 0 0 0 1
+device=RESISTOR
 T 48200 43500 5 10 1 1 0 0 1
-refdes=L1
+refdes=R3
 T 48000 43400 5 10 1 1 0 0 1
-value=100uH
+value=1
+T 48000 43400 5 10 0 0 270 0 1
+description=$0.10 MOUSER 71-CRCW0402-1-E3
+T 48000 43400 5 10 0 0 270 0 1
+footprint=0402
 }
-C 49100 43500 1 180 0 vee-1.sym
-C 48100 43200 1 0 1 gnd-1.sym
