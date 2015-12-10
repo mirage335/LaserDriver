@@ -1,5 +1,5 @@
 #HardStart
-On connection to 12V power, current surges, on the order of >3.5A/5us, but less than 12A, have been known to occur and destroy expensive laser diodes. Lockout board is intended to prevent this, by disconnecting and forcing the control signal to ground.
+Lockout board is available to minimize power-glitch related current surges. Generally, it should not be necessary unless other problems (ie. ground loops) are destroying laser diodes.
 
 #Blanks
 Buying some low-cost diodes for testing purposes can be useful if the stability of the driver power supply is uncertain.
