@@ -14,31 +14,31 @@ M3 ( Spindle on clockwise. )
 G04 P0 ( dwell for no time -- G64 should not smooth over this point )
 G00 Z0.25000 ( retract )
 
-G00 X0.80600 Y0.71130 ( rapid move to begin. )
+G00 X0.83100 Y0.69530 ( rapid move to begin. )
 F1000.00000
 G01 Z0.00000
 G04 P0 ( dwell for no time -- G64 should not smooth over this point )
 F2000.00000
-X0.80600 Y0.71130
-X0.80600 Y0.66030
-X0.76200 Y0.66030
-X0.76200 Y0.71230
-X0.80600 Y0.71230
-X0.80600 Y0.71130
+X0.83100 Y0.69530
+X0.83100 Y0.67630
+X0.81800 Y0.67630
+X0.81800 Y0.69630
+X0.83100 Y0.69630
+X0.83100 Y0.69530
 G04 P0 ( dwell for no time -- G64 should not smooth over this point )
 G00 Z0.25000 ( retract )
 
-G00 X0.87700 Y0.71130 ( rapid move to begin. )
+G00 X0.86200 Y0.69530 ( rapid move to begin. )
 F1000.00000
 G01 Z0.00000
 G04 P0 ( dwell for no time -- G64 should not smooth over this point )
 F2000.00000
-X0.87700 Y0.71130
-X0.87700 Y0.66030
-X0.83300 Y0.66030
-X0.83300 Y0.71230
-X0.87700 Y0.71230
-X0.87700 Y0.71130
+X0.86200 Y0.69530
+X0.86200 Y0.67630
+X0.84900 Y0.67630
+X0.84900 Y0.69630
+X0.86200 Y0.69630
+X0.86200 Y0.69530
 G04 P0 ( dwell for no time -- G64 should not smooth over this point )
 G00 Z0.25000 ( retract )
 
