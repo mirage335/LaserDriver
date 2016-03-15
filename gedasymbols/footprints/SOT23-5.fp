@@ -1,49 +1,19 @@
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Footprint: SOT23-5.fp</title>
-<link rel="stylesheet" href="/gedasymbols.css" type="text/css">
-</head>
-<body>
-<h1 align=center>Footprint: SOT23-5.fp</h1>
+# author: Darrell Harmon
+# email: website@dlharmon.com
+# dist-license: GPL 2
+# use-license: unlimited
+# tested: yes
 
-<p>
-File size: 647 bytes <br>
-File date: Wed Mar  8 11:33:34 2006 <br>
-<a href="SOT23-5.fp?view">View</a> or 
-<a href="SOT23-5.fp?dl">Download</a>
-(<a href="SOT23-5.fp?dlattr">with added source attribution</a>)
-</p>
-
-<p>
-author: Darrell Harmon
-<br>
-dist-license: <a href="/licenses/GPL.html">GPL</a> 2
-<br>
-email: <a href="mailto:website@dlharmon.com">website@dlharmon.com</a>
-<br>
-tested: yes
-<br>
-use-license: unlimited
-<br>
-</p>
-
-
-<p>
-<img src="SOT23-5.fp?png">
-</p>
-<p><br></p>
-<p><hr noshade size=1></p>
-
-<small>
-
-<p align=center>
-
-Copyright 2006, all rights reserved unless specified otherwise.
-<br>
-<a href="/">gedasymbols.org</a> is maintained by
-<a href="/user/dj_delorie/">DJ Delorie</a></p>
-
-</small>
-
-</body>
-</html>
+Element[0x00000000 "" "" "" 0 0 0 0 0 100 0x00000000]
+(
+	Attribute("gedasymbols::url" "http://www.gedasymbols.org/user/darrell_harmon/footprints/SOT23-5.fp")
+	Pad[-6700 -3740 -2900 -3740 2000 1200 2600 "1" "1" 0x00000100]
+	Pad[-6700 0 -2900 0 2000 1200 2600 "2" "2" 0x00000100]
+	Pad[-6700 3740 -2900 3740 2000 1200 2600 "3" "3" 0x00000100]
+	Pad[2900 3740 6700 3740 2000 1200 2600 "4" "4" 0x00000100]
+	Pad[2900 -3740 6700 -3740 2000 1200 2600 "5" "5" 0x00000100]
+	ElementLine [8700 5900 -8700 5900 1000]
+	ElementLine [-8700 5900 -8700 -5900 1000]
+	ElementLine [-8700 -5900 8700 -5900 1000]
+	ElementLine [8700 -5900 8700 5900 1000]
+)
