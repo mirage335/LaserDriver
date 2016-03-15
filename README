@@ -10,6 +10,9 @@ Basic voltage controlled current source. Common collector transistor amplifier a
 
 Low-value collector load is placed behind a safety switch. Optical output with this switch open is expected to be <<100mW, likely <2mW.
 
+#Extras
+Lockout and InterfaceBuffered PCBs are not required. Lockout PCB may be used to delay startup, which should not be necessary. InterfaceBuffered adds an OpAmp for better regulation, which is also not necessary, and slightly reduces stability margins.
+
 #Pinouts
 From PatchRap.
 
