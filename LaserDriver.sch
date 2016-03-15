@@ -410,7 +410,6 @@ T 46500 52000 9 10 1 0 0 0 3
 WARNING
 High-current cable and connector (XT60) strongly recommended for pulse mode.
 Do not operate laser in pulse mode under linear control signal.
-C 48600 44900 1 0 0 12V-plus-1.sym
 C 48800 40900 1 0 0 connector2-2.sym
 {
 T 49100 42150 5 10 0 0 0 0 1
@@ -500,4 +499,23 @@ T 45900 53900 5 10 0 0 270 0 1
 description=$0.10 MOUSER 71-CRCW0402-1-E3
 T 45900 53900 5 10 0 0 270 0 1
 footprint=0402
+}
+C 50500 58900 1 0 1 output-2.sym
+{
+T 49600 59100 5 10 1 0 0 6 1
+net=12Vint:1
+T 50300 59600 5 10 0 0 0 6 1
+device=none
+T 49600 59000 5 10 1 1 0 7 1
+value=OUTPUT
+}
+N 50500 59000 50500 57500 4
+C 47400 44800 1 0 0 input-2.sym
+{
+T 48000 45500 5 10 0 0 0 0 1
+device=none
+T 46900 44700 5 10 1 0 0 0 1
+net=12Vint:1
+T 47900 44900 5 10 1 1 0 7 1
+value=INPUT
 }
