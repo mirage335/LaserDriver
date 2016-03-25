@@ -1,13 +1,11 @@
 ( pcb2gcode 1.2.2 )
-( Software-independent Gcode )
 
 ( This file uses 12 drill bit sizes. )
 ( Bit sizes: [0.035inch] [0.128inch] [0.063inch] [0.038inch] [0.059inch] [0.03inch] [0.06inch] [0.13inch] [0.187inch] [0.05inch] [0.035inch] [0.02inch] )
 
-G94       (Inches per minute feed rate.)
+       G94       (Inches per minute feed rate.)
 G20       (Units == INCHES.)
 G90       (Absolute coordinates.)
-G91.1     (Incremental arc distance mode.)
 S10000     (RPM spindle speed.)
 
 G00 Z0.19685 (Retract)
@@ -210,7 +208,7 @@ X2.55500 Y0.29000
 X1.83500 Y0.43500
 X0.98000 Y1.47000
 
-G00 Z0.197 ( All done -- retract )
+G00 Z0.19685 (All done -- retract)
 
 M5      (Spindle off.)
 M9      (Coolant off.)
