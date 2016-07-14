@@ -59,7 +59,7 @@ T 52800 44400 5 10 1 1 270 0 1
 refdes=R6
 }
 C 53400 43300 1 0 0 gnd-1.sym
-T 57500 36600 9 10 1 0 0 0 5
+T 53200 40700 9 10 1 0 0 0 5
 (30mm/s) / 600Hz = 50 microns (2 mils)
 (10mm/s) / 6000Hz = 2 microns (0.1 mils)
 
@@ -197,7 +197,7 @@ N 53000 42900 53000 44500 4
 N 51300 44500 52000 44500 4
 N 52000 44500 52000 42000 4
 N 52000 42000 53500 42000 4
-T 52200 35100 9 10 1 0 0 0 12
+T 48500 40500 9 10 1 0 0 0 12
 Two potentiometers provided to "store"
 two maximum power settings.
 
@@ -212,7 +212,7 @@ and "BINARY" switch to fine tune photoexposure
 settings (often a fraction of a milliwatt).
 C 48700 47000 1 90 0 vee-1.sym
 C 46600 46400 1 0 0 12V-plus-1.sym
-T 48000 49600 9 10 1 0 0 0 2
+T 48200 48400 9 10 1 0 0 0 2
 WARNING
 High-current cable and connector (XT60) strongly recommended.
 C 46800 43000 1 0 1 io-1.sym
